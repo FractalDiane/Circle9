@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://textures/ui/crosshair.png" type="Texture" id=1]
+[ext_resource path="res://scripts/player_ui.gd" type="Script" id=2]
+
+[sub_resource type="Shader" id=3]
+code = "shader_type canvas_item;
+render_mode unshaded;
+
+uniform float threshold : hint_range(0f, 1f) = 0.5;
+
+float value(vec3 color) {
+	return max(max(color.r, color.g), color.b);
+}
+
+void fragment() {
+	//vec3 tex = texture(SCREEN_TEXTURE, SCREEN_UV).rgb;
+	//COLOR = value(tex) > threshold ? vec4(1f) : vec4(0f, 0f, 0f, 1f);
+	COLOR = texture(SCREEN_TEXTURE, SCREEN_UV);
+}
+"
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+shader_param/threshold = 0.563
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+render_mode unshaded;
+
+void fragment() {
+	vec3 col = 1f - texture(SCREEN_TEXTURE, SCREEN_UV).rgb;
+	float alpha = texture(TEXTURE, UV).a;
+	COLOR = vec4(col, alpha);
+}
+"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+
+[node name="PlayerUI" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScreenShader" type="ColorRect" parent="Control"]
+material = SubResource( 4 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Crosshair" type="TextureRect" parent="Control/CenterContainer"]
+visible = false
+material = SubResource( 2 )
+margin_left = 633.0
+margin_top = 353.0
+margin_right = 647.0
+margin_bottom = 367.0
+texture = ExtResource( 1 )
