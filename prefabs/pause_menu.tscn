@@ -1,0 +1,133 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/pause_menu.gd" type="Script" id=1]
+[ext_resource path="res://textures/ui/button2.png" type="Texture" id=2]
+[ext_resource path="res://fonts/creteround.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://textures/ui/button2_hover.png" type="Texture" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fadein"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0.392157 ), Color( 0, 0, 0, 0.392157 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/CenterContainer/VBoxContainer/ButtonResume:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/CenterContainer/VBoxContainer/ButtonExit:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 3 )
+
+[node name="PauseMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "fadein"
+anims/fadein = SubResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer"]
+margin_left = 515.0
+margin_top = 274.0
+margin_right = 765.0
+margin_bottom = 446.0
+custom_constants/separation = 32
+
+[node name="ButtonResume" type="TextureButton" parent="CanvasLayer/CenterContainer/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 250.0
+margin_bottom = 70.0
+disabled = true
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 4 )
+texture_disabled = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer/VBoxContainer/ButtonResume"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 2 )
+text = "Resume"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonExit" type="TextureButton" parent="CanvasLayer/CenterContainer/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 102.0
+margin_right = 250.0
+margin_bottom = 172.0
+disabled = true
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 4 )
+texture_disabled = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer/VBoxContainer/ButtonExit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 2 )
+text = "Exit"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/ButtonResume" to="." method="_on_ButtonResume_pressed"]
+[connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/ButtonExit" to="." method="_on_ButtonExit_pressed"]

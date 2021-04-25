@@ -1,4 +1,4 @@
-[gd_scene load_steps=243 format=2]
+[gd_scene load_steps=240 format=2]
 
 [ext_resource path="res://models/geometry/club.glb" type="PackedScene" id=1]
 [ext_resource path="res://prefabs/player.tscn" type="PackedScene" id=2]
@@ -277,57 +277,57 @@ shader_param/color = Color( 0, 0, 0, 1 )
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.176471, 0.176471, 0.176471, 1 )
 
-[sub_resource type="ShaderMaterial" id=45]
+[sub_resource type="ShaderMaterial" id=110]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.698039, 0.454902, 0.333333, 1 )
+shader_param/color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="ShaderMaterial" id=46]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.368627, 0.129412, 0.129412, 1 )
+shader_param/color = Color( 0.286275, 0.156863, 0.109804, 1 )
 
 [sub_resource type="ShaderMaterial" id=47]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.203922, 0.207843, 0.458824, 1 )
+shader_param/color = Color( 0.717647, 0.419608, 0.12549, 1 )
 
 [sub_resource type="ShaderMaterial" id=48]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.2, 0.117647, 0.0862745, 1 )
+shader_param/color = Color( 0.027451, 0.027451, 0.027451, 1 )
 
 [sub_resource type="ShaderMaterial" id=49]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.286275, 0.156863, 0.109804, 1 )
+shader_param/color = Color( 0.0588235, 0.0588235, 0.0588235, 1 )
 
 [sub_resource type="ShaderMaterial" id=50]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.717647, 0.419608, 0.12549, 1 )
+shader_param/color = Color( 0.0156863, 0.0156863, 0.0156863, 1 )
 
 [sub_resource type="ShaderMaterial" id=51]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.027451, 0.027451, 0.027451, 1 )
+shader_param/color = Color( 0.243137, 0.243137, 0.243137, 1 )
 
 [sub_resource type="ShaderMaterial" id=52]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.0588235, 0.0588235, 0.0588235, 1 )
+shader_param/color = Color( 0.752941, 0.752941, 0.752941, 1 )
 
 [sub_resource type="ShaderMaterial" id=53]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.0156863, 0.0156863, 0.0156863, 1 )
+shader_param/color = Color( 0.176471, 0.176471, 0.176471, 1 )
 
 [sub_resource type="ShaderMaterial" id=54]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.243137, 0.243137, 0.243137, 1 )
+shader_param/color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="ShaderMaterial" id=55]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.752941, 0.752941, 0.752941, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="ShaderMaterial" id=56]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.176471, 0.176471, 0.176471, 1 )
+shader_param/color = Color( 0.964706, 0.2, 0.2, 1 )
 
 [sub_resource type="ShaderMaterial" id=57]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0, 0, 0, 1 )
+shader_param/color = Color( 0.698039, 0.243137, 0.776471, 1 )
 
 [sub_resource type="ShaderMaterial" id=58]
 shader = ExtResource( 3 )
@@ -335,187 +335,175 @@ shader_param/color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="ShaderMaterial" id=59]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.964706, 0.2, 0.2, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="ShaderMaterial" id=60]
 shader = ExtResource( 3 )
-shader_param/color = Color( 0.698039, 0.243137, 0.776471, 1 )
-
-[sub_resource type="ShaderMaterial" id=61]
-shader = ExtResource( 3 )
-shader_param/color = Color( 1, 1, 1, 1 )
-
-[sub_resource type="ShaderMaterial" id=62]
-shader = ExtResource( 3 )
-shader_param/color = Color( 1, 1, 1, 1 )
-
-[sub_resource type="ShaderMaterial" id=63]
-shader = ExtResource( 3 )
 shader_param/color = Color( 0.188235, 0.12549, 0.101961, 1 )
 
-[sub_resource type="SpatialMaterial" id=64]
+[sub_resource type="SpatialMaterial" id=61]
 flags_unshaded = true
 albedo_texture = ExtResource( 92 )
 uv1_scale = Vector3( 4, 4, 2 )
 uv1_offset = Vector3( -1.444, -0.198, 0 )
 
-[sub_resource type="SpatialMaterial" id=65]
+[sub_resource type="SpatialMaterial" id=62]
 flags_unshaded = true
 albedo_texture = ExtResource( 94 )
 uv1_scale = Vector3( 4, 5, 2 )
 uv1_offset = Vector3( -1.513, -0.246, 0 )
 
-[sub_resource type="SpatialMaterial" id=66]
+[sub_resource type="SpatialMaterial" id=63]
 flags_unshaded = true
 albedo_texture = ExtResource( 93 )
 uv1_scale = Vector3( 2, 3, 1 )
 uv1_offset = Vector3( -0.467, 0.095, 0 )
 
-[sub_resource type="ShaderMaterial" id=67]
+[sub_resource type="ShaderMaterial" id=64]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.176471, 0.105882, 0.0823529, 1 )
 
-[sub_resource type="ShaderMaterial" id=68]
+[sub_resource type="ShaderMaterial" id=65]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.588235, 0.129412, 0.129412, 1 )
 
-[sub_resource type="ShaderMaterial" id=69]
+[sub_resource type="ShaderMaterial" id=66]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.054902, 0.0980392, 0.203922, 1 )
 
-[sub_resource type="ShaderMaterial" id=70]
+[sub_resource type="ShaderMaterial" id=67]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.203922, 0.12549, 0.219608, 1 )
 
-[sub_resource type="ShaderMaterial" id=71]
+[sub_resource type="ShaderMaterial" id=68]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.713726, 0.458824, 0.4, 1 )
 
-[sub_resource type="ShaderMaterial" id=72]
+[sub_resource type="ShaderMaterial" id=69]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.145098, 0.384314, 0.156863, 1 )
 
-[sub_resource type="ShaderMaterial" id=73]
+[sub_resource type="ShaderMaterial" id=70]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.529412, 0.466667, 0.423529, 1 )
 
-[sub_resource type="ShaderMaterial" id=74]
+[sub_resource type="ShaderMaterial" id=71]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.643137, 0.32549, 0.117647, 1 )
 
-[sub_resource type="ShaderMaterial" id=75]
+[sub_resource type="ShaderMaterial" id=72]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.709804, 0.588235, 0.431373, 1 )
 
-[sub_resource type="ShaderMaterial" id=76]
+[sub_resource type="ShaderMaterial" id=73]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.290196, 0.207843, 0.517647, 1 )
 
-[sub_resource type="ShaderMaterial" id=77]
+[sub_resource type="ShaderMaterial" id=74]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.482353, 0.482353, 0.482353, 1 )
 
-[sub_resource type="ShaderMaterial" id=78]
+[sub_resource type="ShaderMaterial" id=75]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.294118, 0.14902, 0.360784, 1 )
 
-[sub_resource type="ShaderMaterial" id=79]
+[sub_resource type="ShaderMaterial" id=76]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.423529, 0.286275, 0.196078, 1 )
 
-[sub_resource type="ShaderMaterial" id=80]
+[sub_resource type="ShaderMaterial" id=77]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.733333, 0.737255, 0, 1 )
 
-[sub_resource type="ShaderMaterial" id=81]
+[sub_resource type="ShaderMaterial" id=78]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.423529, 0.196078, 0.372549, 1 )
 
-[sub_resource type="ShaderMaterial" id=82]
+[sub_resource type="ShaderMaterial" id=79]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="ShaderMaterial" id=83]
+[sub_resource type="ShaderMaterial" id=80]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.670588, 0.54902, 0.415686, 1 )
 
-[sub_resource type="ShaderMaterial" id=84]
+[sub_resource type="ShaderMaterial" id=81]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.160784, 0.160784, 0.160784, 1 )
 
-[sub_resource type="ShaderMaterial" id=85]
+[sub_resource type="ShaderMaterial" id=82]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.0509804, 0.0509804, 0.0509804, 1 )
 
-[sub_resource type="ShaderMaterial" id=86]
+[sub_resource type="ShaderMaterial" id=83]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.160784, 0.0980392, 0.0627451, 1 )
 
-[sub_resource type="ShaderMaterial" id=87]
+[sub_resource type="ShaderMaterial" id=84]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.45098, 0.607843, 0.137255, 1 )
 
-[sub_resource type="ShaderMaterial" id=88]
+[sub_resource type="ShaderMaterial" id=85]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.160784, 0.160784, 0.160784, 1 )
 
-[sub_resource type="ShaderMaterial" id=89]
+[sub_resource type="ShaderMaterial" id=86]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.360784, 0.219608, 0.176471, 1 )
 
-[sub_resource type="ShaderMaterial" id=90]
+[sub_resource type="ShaderMaterial" id=87]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.0745098, 0.0745098, 0.0745098, 1 )
 
-[sub_resource type="ShaderMaterial" id=91]
+[sub_resource type="ShaderMaterial" id=88]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.698039, 0.470588, 0.337255, 1 )
 
-[sub_resource type="ShaderMaterial" id=92]
+[sub_resource type="ShaderMaterial" id=89]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.745098, 0.729412, 0.32549, 1 )
 
-[sub_resource type="ShaderMaterial" id=93]
+[sub_resource type="ShaderMaterial" id=90]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.113725, 0.152941, 0.290196, 1 )
 
-[sub_resource type="ShaderMaterial" id=94]
+[sub_resource type="ShaderMaterial" id=91]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.278431, 0.156863, 0.0901961, 1 )
 
-[sub_resource type="ShaderMaterial" id=95]
+[sub_resource type="ShaderMaterial" id=92]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.760784, 0.564706, 0.439216, 1 )
 
-[sub_resource type="ShaderMaterial" id=96]
+[sub_resource type="ShaderMaterial" id=93]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.196078, 0.2, 0.423529, 1 )
 
-[sub_resource type="ShaderMaterial" id=97]
+[sub_resource type="ShaderMaterial" id=94]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.227451, 0.168627, 0.133333, 1 )
 
-[sub_resource type="ShaderMaterial" id=98]
+[sub_resource type="ShaderMaterial" id=95]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.0666667, 0.0588235, 0.054902, 1 )
 
-[sub_resource type="ShaderMaterial" id=99]
+[sub_resource type="ShaderMaterial" id=96]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.52549, 0.337255, 0.211765, 1 )
 
-[sub_resource type="ShaderMaterial" id=100]
+[sub_resource type="ShaderMaterial" id=97]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.717647, 0.639216, 0.588235, 1 )
 
-[sub_resource type="ShaderMaterial" id=101]
+[sub_resource type="ShaderMaterial" id=98]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.368627, 0.290196, 0.239216, 1 )
 
-[sub_resource type="ShaderMaterial" id=102]
+[sub_resource type="ShaderMaterial" id=99]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="Shader" id=103]
+[sub_resource type="Shader" id=100]
 code = "shader_type spatial;
 render_mode unshaded;
 
@@ -526,158 +514,158 @@ void fragment() {
 }
 "
 
-[sub_resource type="ShaderMaterial" id=104]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=101]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.623529, 0.470588, 0.415686, 1 )
 
-[sub_resource type="ShaderMaterial" id=105]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=102]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.0823529, 0.0823529, 0.0823529, 1 )
 
-[sub_resource type="ShaderMaterial" id=106]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=103]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.0235294, 0.0235294, 0.0235294, 1 )
 
-[sub_resource type="ShaderMaterial" id=107]
+[sub_resource type="ShaderMaterial" id=104]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.631373, 0.517647, 0.443137, 1 )
 
-[sub_resource type="ShaderMaterial" id=108]
+[sub_resource type="ShaderMaterial" id=105]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="ShaderMaterial" id=109]
+[sub_resource type="ShaderMaterial" id=106]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.419608, 0.345098, 0.247059, 1 )
 
-[sub_resource type="ShaderMaterial" id=110]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=107]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.262745, 0.392157, 0.266667, 1 )
 
-[sub_resource type="ShaderMaterial" id=111]
+[sub_resource type="ShaderMaterial" id=108]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.0862745, 0.0941176, 0.231373, 1 )
 
-[sub_resource type="ShaderMaterial" id=112]
+[sub_resource type="ShaderMaterial" id=109]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.101961, 0.101961, 0.101961, 1 )
 
-[sub_resource type="ShaderMaterial" id=113]
+[sub_resource type="ShaderMaterial" id=146]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.207843, 0.137255, 0.0666667, 1 )
 
-[sub_resource type="ShaderMaterial" id=114]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=111]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.298039, 0.254902, 0.407843, 1 )
 
-[sub_resource type="ShaderMaterial" id=115]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=112]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.0705882, 0.0862745, 0.0705882, 1 )
 
-[sub_resource type="ShaderMaterial" id=116]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=113]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.117647, 0.117647, 0.117647, 1 )
 
-[sub_resource type="SphereShape" id=117]
+[sub_resource type="SphereShape" id=114]
 radius = 1.5
 
-[sub_resource type="ShaderMaterial" id=118]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=115]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.584314, 0.403922, 0.317647, 1 )
 
-[sub_resource type="ShaderMaterial" id=119]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=116]
+shader = SubResource( 100 )
 shader_param/color = Color( 0.682353, 0.498039, 0.396078, 1 )
 
-[sub_resource type="ShaderMaterial" id=120]
-shader = SubResource( 103 )
+[sub_resource type="ShaderMaterial" id=117]
+shader = SubResource( 100 )
 shader_param/color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="ShaderMaterial" id=121]
+[sub_resource type="ShaderMaterial" id=118]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.690196, 0.513726, 0.396078, 1 )
 
-[sub_resource type="ShaderMaterial" id=122]
+[sub_resource type="ShaderMaterial" id=119]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.686275, 0.521569, 0.12549, 1 )
 
-[sub_resource type="ShaderMaterial" id=123]
+[sub_resource type="ShaderMaterial" id=120]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.223529, 0.207843, 0.52549, 1 )
 
-[sub_resource type="ShaderMaterial" id=124]
+[sub_resource type="ShaderMaterial" id=121]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.160784, 0.160784, 0.160784, 1 )
 
-[sub_resource type="ShaderMaterial" id=125]
+[sub_resource type="ShaderMaterial" id=122]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.666667, 0.560784, 0.529412, 1 )
 
-[sub_resource type="ShaderMaterial" id=126]
+[sub_resource type="ShaderMaterial" id=123]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.67451, 0.388235, 0.686275, 1 )
 
-[sub_resource type="ShaderMaterial" id=127]
+[sub_resource type="ShaderMaterial" id=124]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.223529, 0.368627, 0.490196, 1 )
 
-[sub_resource type="ShaderMaterial" id=128]
+[sub_resource type="ShaderMaterial" id=125]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.352941, 0.176471, 0.0823529, 1 )
 
-[sub_resource type="ShaderMaterial" id=129]
+[sub_resource type="ShaderMaterial" id=126]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.6, 0.466667, 0.388235, 1 )
 
-[sub_resource type="ShaderMaterial" id=130]
+[sub_resource type="ShaderMaterial" id=127]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.223529, 0.207843, 0.52549, 1 )
 
-[sub_resource type="ShaderMaterial" id=131]
+[sub_resource type="ShaderMaterial" id=128]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.109804, 0.0588235, 0.133333, 1 )
 
-[sub_resource type="ShaderMaterial" id=132]
+[sub_resource type="ShaderMaterial" id=129]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.0823529, 0.0745098, 0.0627451, 1 )
 
-[sub_resource type="ShaderMaterial" id=133]
+[sub_resource type="ShaderMaterial" id=130]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.396078, 0.270588, 0.188235, 1 )
 
-[sub_resource type="ShaderMaterial" id=134]
+[sub_resource type="ShaderMaterial" id=131]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.34902, 0.34902, 0.34902, 1 )
 
-[sub_resource type="ShaderMaterial" id=135]
+[sub_resource type="ShaderMaterial" id=132]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.160784, 0.203922, 0.164706, 1 )
 
-[sub_resource type="ShaderMaterial" id=136]
+[sub_resource type="ShaderMaterial" id=133]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.741176, 0.580392, 0.45098, 1 )
 
-[sub_resource type="ShaderMaterial" id=137]
+[sub_resource type="ShaderMaterial" id=134]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.74902, 0.74902, 0.74902, 1 )
 
-[sub_resource type="ShaderMaterial" id=138]
+[sub_resource type="ShaderMaterial" id=135]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.156863, 0.286275, 0.494118, 1 )
 
-[sub_resource type="ShaderMaterial" id=139]
+[sub_resource type="ShaderMaterial" id=136]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="ShaderMaterial" id=140]
+[sub_resource type="ShaderMaterial" id=137]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.788235, 0.545098, 0.45098, 1 )
 
-[sub_resource type="ShaderMaterial" id=141]
+[sub_resource type="ShaderMaterial" id=138]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
 
-[sub_resource type="Shader" id=142]
+[sub_resource type="Shader" id=139]
 code = "shader_type spatial;
 render_mode unshaded;
 
@@ -688,27 +676,27 @@ void fragment() {
 }
 "
 
-[sub_resource type="ShaderMaterial" id=143]
-shader = SubResource( 142 )
+[sub_resource type="ShaderMaterial" id=140]
+shader = SubResource( 139 )
 shader_param/color = Color( 0.0823529, 0.0823529, 0.0823529, 1 )
 
-[sub_resource type="ShaderMaterial" id=144]
+[sub_resource type="ShaderMaterial" id=141]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.631373, 0.517647, 0.443137, 1 )
 
-[sub_resource type="ShaderMaterial" id=145]
+[sub_resource type="ShaderMaterial" id=142]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0, 0.505882, 0.458824, 1 )
 
-[sub_resource type="ShaderMaterial" id=146]
+[sub_resource type="ShaderMaterial" id=143]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.321569, 0.184314, 0.0941176, 1 )
 
-[sub_resource type="ShaderMaterial" id=147]
+[sub_resource type="ShaderMaterial" id=144]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="SphereShape" id=148]
+[sub_resource type="SphereShape" id=145]
 radius = 0.5
 
 [node name="Club" type="Spatial"]
@@ -1014,165 +1002,165 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.629
 transform = Transform( -0.18, -1.14017e-08, -2.46721e-08, 0, 0.163396, -0.0755099, 2.71792e-08, -0.0755099, -0.163396, -0.0341492, -0.307803, 0.31173 )
 
 [node name="Cube004" parent="Props/Couch3/PersonModel/char_sit4/Armature/Skeleton" index="0"]
-material/0 = SubResource( 45 )
-material/1 = SubResource( 46 )
-material/2 = SubResource( 47 )
-material/3 = SubResource( 48 )
+material/0 = SubResource( 110 )
+material/1 = SubResource( 110 )
+material/2 = SubResource( 110 )
+material/3 = SubResource( 110 )
 
 [node name="PersonModel2" parent="Props/Couch3" instance=ExtResource( 17 )]
 transform = Transform( 0.18, 8.88804e-09, -4.14222e-08, -1.92297e-08, 0.173961, -0.0462353, -3.77494e-08, -0.0462353, -0.173961, -0.625797, -0.324511, 0.240458 )
 
 [node name="Cube004" parent="Props/Couch3/PersonModel2/char_sit1/Armature/Skeleton" index="0"]
-material/0 = SubResource( 49 )
-material/1 = SubResource( 50 )
-material/2 = SubResource( 51 )
+material/0 = SubResource( 46 )
+material/1 = SubResource( 47 )
+material/2 = SubResource( 48 )
 
 [node name="Speaker" parent="Props" instance=ExtResource( 70 )]
 transform = Transform( -0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, -5.25843, 0.58295, 2.62292 )
 
 [node name="Cube001" parent="Props/Speaker/speaker" index="0"]
-material/0 = SubResource( 52 )
-material/1 = SubResource( 53 )
+material/0 = SubResource( 49 )
+material/1 = SubResource( 50 )
 
 [node name="Speaker2" parent="Props" instance=ExtResource( 70 )]
 transform = Transform( -0.6, 0, -9.05975e-08, 0, 0.6, 0, 9.05975e-08, 0, -0.6, -9.54822, 0.58295, 2.62292 )
 
 [node name="Cube001" parent="Props/Speaker2/speaker" index="0"]
 transform = Transform( 1, 0, -2.84217e-14, 0, 1, 0, 2.84217e-14, 0, 1, 0.13427, 2.746, 0 )
-material/0 = SubResource( 52 )
-material/1 = SubResource( 53 )
+material/0 = SubResource( 49 )
+material/1 = SubResource( 50 )
 
 [node name="disco_ball" parent="Props" instance=ExtResource( 71 )]
 transform = Transform( 0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, -7.53425, 2.43815, -1.39009 )
 
 [node name="Cube002" parent="Props/disco_ball" index="0"]
-material/0 = SubResource( 54 )
-material/1 = SubResource( 55 )
+material/0 = SubResource( 51 )
+material/1 = SubResource( 52 )
 
 [node name="camera1" parent="Props" instance=ExtResource( 72 )]
 transform = Transform( -0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, 5.29183, 1.44711, 3.66816 )
 
 [node name="Cube004" parent="Props/camera1" index="0"]
-material/0 = SubResource( 56 )
-material/1 = SubResource( 57 )
+material/0 = SubResource( 53 )
+material/1 = SubResource( 54 )
 
 [node name="camera2" parent="Props" instance=ExtResource( 73 )]
 transform = Transform( -0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, -10.6503, 1.49807, 3.66859 )
 
 [node name="Cube005" parent="Props/camera2" index="0"]
-material/0 = SubResource( 56 )
-material/1 = SubResource( 57 )
+material/0 = SubResource( 53 )
+material/1 = SubResource( 54 )
 
 [node name="fixture1" parent="Props" instance=ExtResource( 74 )]
 transform = Transform( -8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, -2.027, -1.714, -0.516 )
 
 [node name="Cylinder" parent="Props/fixture1" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, -1.77636e-15, -0.28249, 8.6309e-07, 0, 1.05879e-22, 0, 0.28249, 0, 18.1002, -0.0570011 )
-material/0 = SubResource( 58 )
+material/0 = SubResource( 55 )
 
 [node name="fixture2" parent="Props" instance=ExtResource( 74 )]
 transform = Transform( -8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, -2.02685, -1.214, -0.515978 )
 
 [node name="Cylinder" parent="Props/fixture2" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, -1.77636e-15, -0.28249, 8.6309e-07, 0, 1.05879e-22, 0, 0.28249, 0, 18.1002, -0.0570011 )
-material/0 = SubResource( 59 )
+material/0 = SubResource( 56 )
 
 [node name="fixture3" parent="Props" instance=ExtResource( 74 )]
 transform = Transform( -8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, -2.02685, -2.214, -0.515978 )
 
 [node name="Cylinder" parent="Props/fixture3" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, -1.77636e-15, -0.28249, 8.6309e-07, 0, 1.05879e-22, 0, 0.28249, 0, 18.1002, -0.0570011 )
-material/0 = SubResource( 60 )
+material/0 = SubResource( 57 )
 
 [node name="fixture11" parent="Props" instance=ExtResource( 74 )]
 transform = Transform( -0.18, 0, 1.57361e-08, 0, 0.2, 0, -1.74846e-08, 0, -0.2, -6.01141, -1.80571, -11.2458 )
 
 [node name="Cylinder" parent="Props/fixture11" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, -1.77636e-15, -0.28249, 8.6309e-07, 0, 1.05879e-22, 0, 0.28249, 0, 18.1002, -0.0570011 )
-material/0 = SubResource( 58 )
+material/0 = SubResource( 55 )
 
 [node name="fixture12" parent="Props" instance=ExtResource( 74 )]
 transform = Transform( -0.18, 0, 1.57361e-08, 0, 0.2, 0, -1.74846e-08, 0, -0.2, -6.01143, -1.30571, -11.2456 )
 
 [node name="Cylinder" parent="Props/fixture12" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, -1.77636e-15, -0.28249, 8.6309e-07, 0, 1.05879e-22, 0, 0.28249, 0, 18.1002, -0.0570011 )
-material/0 = SubResource( 59 )
+material/0 = SubResource( 56 )
 
 [node name="fixture13" parent="Props" instance=ExtResource( 74 )]
 transform = Transform( -0.18, 0, 1.57361e-08, 0, 0.2, 0, -1.74846e-08, 0, -0.2, -6.01143, -2.30571, -11.2456 )
 
 [node name="Cylinder" parent="Props/fixture13" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, -1.77636e-15, -0.28249, 8.6309e-07, 0, 1.05879e-22, 0, 0.28249, 0, 18.1002, -0.0570011 )
-material/0 = SubResource( 60 )
+material/0 = SubResource( 57 )
 
 [node name="fixture4" parent="Props" instance=ExtResource( 75 )]
 transform = Transform( -8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, 5.85759, -2.79623, -0.465301 )
 
 [node name="Cylinder001" parent="Props/fixture4" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, 1.77636e-15, -0.28249, 8.6309e-07, 0, -1.05879e-22, 0, 0.28249, 0, 26.597, 0 )
-material/0 = SubResource( 59 )
+material/0 = SubResource( 56 )
 
 [node name="fixture5" parent="Props" instance=ExtResource( 75 )]
 transform = Transform( -8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, 5.85759, -3.28005, -0.465301 )
 
 [node name="Cylinder001" parent="Props/fixture5" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, 1.77636e-15, -0.28249, 8.6309e-07, 0, -1.05879e-22, 0, 0.28249, 0, 26.597, 0 )
-material/0 = SubResource( 60 )
+material/0 = SubResource( 57 )
 
 [node name="fixture7" parent="Props" instance=ExtResource( 75 )]
 transform = Transform( -8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -12.0526, -3.03219, -0.650992 )
 
 [node name="Cylinder001" parent="Props/fixture7" index="0"]
-material/0 = SubResource( 59 )
+material/0 = SubResource( 56 )
 
 [node name="fixture8" parent="Props" instance=ExtResource( 75 )]
 transform = Transform( -8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -12.0526, -3.516, -0.650992 )
 
 [node name="Cylinder001" parent="Props/fixture8" index="0"]
-material/0 = SubResource( 60 )
+material/0 = SubResource( 57 )
 
 [node name="fixture9" parent="Props" instance=ExtResource( 75 )]
 transform = Transform( 2.62268e-08, 0, -0.2, 0, 0.2, 0, 0.2, 0, 2.62268e-08, -3.0346, -3.03219, -0.650992 )
 
 [node name="Cylinder001" parent="Props/fixture9" index="0"]
-material/0 = SubResource( 60 )
+material/0 = SubResource( 57 )
 
 [node name="fixture10" parent="Props" instance=ExtResource( 75 )]
 transform = Transform( 2.62268e-08, 0, -0.2, 0, 0.2, 0, 0.2, 0, 2.62268e-08, -3.0346, -3.516, -0.650992 )
 
 [node name="Cylinder001" parent="Props/fixture10" index="0"]
-material/0 = SubResource( 61 )
+material/0 = SubResource( 58 )
 
 [node name="fixture6" parent="Props" instance=ExtResource( 76 )]
 transform = Transform( -8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, 5.89046, -5.91183, -8.5949 )
 
 [node name="Cylinder002" parent="Props/fixture6" index="0"]
 transform = Transform( 1.68377e-08, 14.4802, 0, -0.28249, 8.6309e-07, 0, 0, 1.13687e-13, 0.28249, 0, 33.6504, 0 )
-material/0 = SubResource( 62 )
+material/0 = SubResource( 59 )
 
 [node name="picture_wall" parent="Props" instance=ExtResource( 77 )]
 transform = Transform( -8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -10.2265, 1.68442, -6.67056 )
 
 [node name="Cube006" parent="Props/picture_wall" index="0"]
 transform = Transform( 1.62066, 3.55271e-15, 1.06581e-14, 0, 2.09675, -0.105237, -2.84217e-14, 0.211723, 1.0422, -0.636971, 1.11358, -9.00002 )
-material/0 = SubResource( 63 )
-material/1 = SubResource( 64 )
+material/0 = SubResource( 60 )
+material/1 = SubResource( 61 )
 
 [node name="picture_wall2" parent="Props" instance=ExtResource( 77 )]
 transform = Transform( -8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -10.226, 1.684, -8.171 )
 
 [node name="Cube006" parent="Props/picture_wall2" index="0"]
 transform = Transform( 1.62066, 3.55271e-15, 1.06581e-14, 0, 2.09675, -0.105237, -2.84217e-14, 0.211723, 1.0422, -0.636978, 1.11358, -9.00003 )
-material/0 = SubResource( 63 )
-material/1 = SubResource( 65 )
+material/0 = SubResource( 60 )
+material/1 = SubResource( 62 )
 
 [node name="picture_wall3" parent="Props" instance=ExtResource( 77 )]
 transform = Transform( -8.74228e-09, 0, 0.2, 0, 0.2, 0, -0.2, 0, -8.74228e-09, -10.226, 1.684, -9.671 )
 
 [node name="Cube006" parent="Props/picture_wall3" index="0"]
 transform = Transform( 1.62066, 3.55271e-15, 1.06581e-14, 0, 2.09675, -0.105237, -2.84217e-14, 0.211723, 1.0422, -0.636978, 1.11358, -9.00003 )
-material/0 = SubResource( 63 )
-material/1 = SubResource( 66 )
+material/0 = SubResource( 60 )
+material/1 = SubResource( 63 )
 
 [node name="People" type="Node" parent="."]
 
@@ -1181,60 +1169,60 @@ transform = Transform( 0.083073, 0, 0.159684, 0, 0.18, 0, -0.159684, 0, 0.083073
 
 [node name="Cube004" parent="People/PersonModel/char_dance3/Armature/Skeleton" index="0"]
 transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0 )
-material/0 = SubResource( 67 )
-material/1 = SubResource( 68 )
-material/2 = SubResource( 69 )
-material/3 = SubResource( 70 )
+material/0 = SubResource( 64 )
+material/1 = SubResource( 65 )
+material/2 = SubResource( 66 )
+material/3 = SubResource( 67 )
 
 [node name="PersonModel2" parent="People" instance=ExtResource( 38 )]
 transform = Transform( 0.148862, 0, 0.101193, 0, 0.18, 0, -0.101193, 0, 0.148862, -6.05, 0.378031, 0 )
 
 [node name="Cube004" parent="People/PersonModel2/char_dance2/Armature/Skeleton" index="0"]
-material/0 = SubResource( 71 )
-material/1 = SubResource( 72 )
-material/2 = SubResource( 73 )
-material/3 = SubResource( 74 )
+material/0 = SubResource( 68 )
+material/1 = SubResource( 69 )
+material/2 = SubResource( 70 )
+material/3 = SubResource( 71 )
 
 [node name="PersonModel3" parent="People" instance=ExtResource( 39 )]
 transform = Transform( 0.171783, 0, -0.0537644, 0, 0.18, 0, 0.0537644, 0, 0.171783, -5.81137, 0.401683, -1.08938 )
 
 [node name="Cube004" parent="People/PersonModel3/char_dance1/Armature/Skeleton" index="0"]
-material/0 = SubResource( 75 )
-material/1 = SubResource( 76 )
-material/2 = SubResource( 77 )
-material/3 = SubResource( 78 )
+material/0 = SubResource( 72 )
+material/1 = SubResource( 73 )
+material/2 = SubResource( 74 )
+material/3 = SubResource( 75 )
 
 [node name="PersonModel4" parent="People" instance=ExtResource( 58 )]
 transform = Transform( 0.18, 0, 0, 0, 0.18, 0, 0, 0, 0.18, -7.46687, 0.282136, 2.71273 )
 
 [node name="Cube004" parent="People/PersonModel4/char_dj/Armature/Skeleton" index="0"]
-material/0 = SubResource( 79 )
-material/1 = SubResource( 80 )
-material/2 = SubResource( 81 )
-material/3 = SubResource( 82 )
+material/0 = SubResource( 76 )
+material/1 = SubResource( 77 )
+material/2 = SubResource( 78 )
+material/3 = SubResource( 79 )
 
 [node name="PersonModel5" parent="People" instance=ExtResource( 39 )]
 transform = Transform( 0.035954, 0, 0.176373, 0, 0.18, 0, -0.176373, 0, 0.035954, -8.09768, 0.29673, -6.41156 )
 
 [node name="Cube004" parent="People/PersonModel5/char_dance1/Armature/Skeleton" index="0"]
-material/0 = SubResource( 83 )
-material/1 = SubResource( 84 )
-material/3 = SubResource( 85 )
+material/0 = SubResource( 80 )
+material/1 = SubResource( 81 )
+material/3 = SubResource( 82 )
 
 [node name="PersonModel6" parent="People" instance=ExtResource( 68 )]
 transform = Transform( 0.0489711, 0, -0.17321, 0, 0.18, 0, 0.17321, 0, 0.0489711, 2.58852, 0.292621, -6.56585 )
 
 [node name="Cube004" parent="People/PersonModel6/char_idle3/Armature/Skeleton" index="0"]
-material/0 = SubResource( 86 )
-material/1 = SubResource( 87 )
-material/2 = SubResource( 88 )
+material/0 = SubResource( 83 )
+material/1 = SubResource( 84 )
+material/2 = SubResource( 85 )
 
 [node name="PersonModel7" parent="People" instance=ExtResource( 29 )]
 transform = Transform( 0.171469, 0, 0.0547589, 0, 0.18, 0, -0.0547589, 0, 0.171469, -10.2216, 0.291874, -8.31021 )
 
 [node name="Cube004" parent="People/PersonModel7/char_idle/Armature/Skeleton" index="0"]
-material/0 = SubResource( 89 )
-material/2 = SubResource( 90 )
+material/0 = SubResource( 86 )
+material/2 = SubResource( 87 )
 
 [node name="cloak" parent="People/PersonModel7" instance=ExtResource( 87 )]
 transform = Transform( 1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, -0.0140591, 1.70164, -0.0487881 )
@@ -1243,10 +1231,10 @@ transform = Transform( 1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, -0.014059
 transform = Transform( -0.129359, 0, -0.125165, 0, 0.18, 0, 0.125165, 0, -0.129359, -7.69076, 0.247981, -6.21446 )
 
 [node name="Cube004" parent="People/PersonModel8/char_dance4/Armature/Skeleton" index="0"]
-material/0 = SubResource( 91 )
-material/1 = SubResource( 92 )
-material/2 = SubResource( 93 )
-material/3 = SubResource( 94 )
+material/0 = SubResource( 88 )
+material/1 = SubResource( 89 )
+material/2 = SubResource( 90 )
+material/3 = SubResource( 91 )
 
 [node name="PersonWitches" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.983483, 0.681496, 0.539094 )
@@ -1257,19 +1245,19 @@ dialogue_audio = [ ExtResource( 50 ), ExtResource( 85 ), ExtResource( 49 ), ExtR
 transform = Transform( -0.00357175, 0, -0.179965, 0, 0.18, 0, 0.179965, 0, -0.00357175, -0.306436, -0.400304, 0.287457 )
 
 [node name="Cube004" parent="PersonWitches/PersonModel/char_worried/Armature/Skeleton" index="0"]
-material/0 = SubResource( 95 )
-material/1 = SubResource( 96 )
-material/2 = SubResource( 97 )
-material/3 = SubResource( 98 )
+material/0 = SubResource( 92 )
+material/1 = SubResource( 93 )
+material/2 = SubResource( 94 )
+material/3 = SubResource( 95 )
 
 [node name="PersonModel2" parent="PersonWitches" instance=ExtResource( 29 )]
 transform = Transform( -0.0465874, 0, -0.173867, 0, 0.18, 0, 0.173867, 0, -0.0465874, -0.221896, -0.389238, -0.342748 )
 
 [node name="Cube004" parent="PersonWitches/PersonModel2/char_idle/Armature/Skeleton" index="0"]
-material/0 = SubResource( 99 )
-material/1 = SubResource( 100 )
-material/2 = SubResource( 101 )
-material/3 = SubResource( 102 )
+material/0 = SubResource( 96 )
+material/1 = SubResource( 97 )
+material/2 = SubResource( 98 )
+material/3 = SubResource( 99 )
 
 [node name="PersonBartender" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.69043, 0.681496, -4.41145 )
@@ -1280,16 +1268,16 @@ dialogue_audio = [ ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtR
 transform = Transform( -0.01784, 0, 0.179114, 0, 0.18, 0, -0.179114, 0, -0.01784, 0.673416, -0.400915, -0.50899 )
 
 [node name="Cube004" parent="PersonBartender/PersonModel/char_bartender/Armature/Skeleton" index="0"]
-material/0 = SubResource( 104 )
-material/1 = SubResource( 105 )
-material/2 = SubResource( 106 )
+material/0 = SubResource( 101 )
+material/1 = SubResource( 102 )
+material/2 = SubResource( 103 )
 
 [node name="PersonModel2" parent="PersonBartender" instance=ExtResource( 56 )]
 transform = Transform( 0.0190463, 0, -0.178989, 0, 0.18, 0, 0.178989, 0, 0.0190463, -0.400795, -0.39492, -0.196605 )
 
 [node name="Cube004" parent="PersonBartender/PersonModel2/char_stern/Armature/Skeleton" index="0"]
-material/0 = SubResource( 107 )
-material/1 = SubResource( 108 )
+material/0 = SubResource( 104 )
+material/1 = SubResource( 105 )
 
 [node name="cloak" parent="PersonBartender/PersonModel2" instance=ExtResource( 87 )]
 transform = Transform( 1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, -0.0140591, 1.70164, -0.0487881 )
@@ -1303,19 +1291,19 @@ dialogue_audio = [ ExtResource( 22 ), ExtResource( 27 ), ExtResource( 25 ), ExtR
 transform = Transform( 0.108063, 0, 0.143953, 0, 0.18, 0, -0.143953, 0, 0.108063, 0.539819, -0.406156, 0.361137 )
 
 [node name="Cube004" parent="PersonIncident/PersonModel/char_explain/Armature/Skeleton" index="0"]
-material/0 = SubResource( 109 )
-material/1 = SubResource( 110 )
-material/2 = SubResource( 111 )
-material/3 = SubResource( 112 )
+material/0 = SubResource( 106 )
+material/1 = SubResource( 107 )
+material/2 = SubResource( 108 )
+material/3 = SubResource( 109 )
 
 [node name="PersonModel2" parent="PersonIncident" instance=ExtResource( 16 )]
 transform = Transform( -0.18, 0, -1.57361e-08, 0, 0.18, 0, 1.57361e-08, 0, -0.18, -0.132879, -0.428201, -0.40851 )
 
 [node name="Cube004" parent="PersonIncident/PersonModel2/char_walllean/Armature/Skeleton" index="0"]
-material/0 = SubResource( 113 )
-material/1 = SubResource( 114 )
-material/2 = SubResource( 115 )
-material/3 = SubResource( 116 )
+material/0 = SubResource( 146 )
+material/1 = SubResource( 111 )
+material/2 = SubResource( 112 )
+material/3 = SubResource( 113 )
 
 [node name="PersonWitchMeeting" parent="." instance=ExtResource( 7 )]
 transform = Transform( -0.0222511, 0, 0.999752, 0, 1, 0, -0.999752, 0, -0.0222511, 4.34871, 0.230559, -8.84479 )
@@ -1326,13 +1314,13 @@ dialogue_audio = [ ExtResource( 40 ), ExtResource( 41 ), ExtResource( 43 ), ExtR
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.601779, 1.19209e-07, -0.345657 )
 
 [node name="CollisionShape" parent="PersonWitchMeeting/Area" index="0"]
-shape = SubResource( 117 )
+shape = SubResource( 114 )
 
 [node name="PersonModel" parent="PersonWitchMeeting" instance=ExtResource( 17 )]
 transform = Transform( 0.179551, 0, -0.0127066, 0, 0.18, 0, 0.0127066, 0, 0.179551, -0.0158434, 0, -0.0157156 )
 
 [node name="Cube004" parent="PersonWitchMeeting/PersonModel/char_sit1/Armature/Skeleton" index="0"]
-material/0 = SubResource( 118 )
+material/0 = SubResource( 115 )
 
 [node name="cloak" parent="PersonWitchMeeting/PersonModel" instance=ExtResource( 87 )]
 transform = Transform( 1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, -0.014061, 1.69029, -0.0487881 )
@@ -1341,8 +1329,8 @@ transform = Transform( 1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, -0.014061
 transform = Transform( 0.152544, 0, 0.0955533, 0, 0.18, 0, -0.0955533, 0, 0.152544, 1.21261, 0, -0.185642 )
 
 [node name="Cube004" parent="PersonWitchMeeting/PersonModel2/char_sit2/Armature/Skeleton" index="0"]
-material/0 = SubResource( 119 )
-material/1 = SubResource( 120 )
+material/0 = SubResource( 116 )
+material/1 = SubResource( 117 )
 
 [node name="cloak" parent="PersonWitchMeeting/PersonModel2" instance=ExtResource( 87 )]
 transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -0.0524292, 1.70164, -0.125854 )
@@ -1356,19 +1344,19 @@ dialogue_audio = [ ExtResource( 33 ), ExtResource( 32 ), ExtResource( 31 ), ExtR
 transform = Transform( 0.18, 0, 0, 0, 0.18, 0, 0, 0, 0.18, -0.707472, -0.424051, -0.345696 )
 
 [node name="Cube004" parent="PersonDrunk/PersonModel/char_drunk/Armature/Skeleton" index="0"]
-material/0 = SubResource( 121 )
-material/1 = SubResource( 122 )
-material/2 = SubResource( 123 )
-material/3 = SubResource( 124 )
+material/0 = SubResource( 118 )
+material/1 = SubResource( 119 )
+material/2 = SubResource( 120 )
+material/3 = SubResource( 121 )
 
 [node name="PersonModel2" parent="PersonDrunk" instance=ExtResource( 21 )]
 transform = Transform( 0.136066, 0, 0.117839, 0, 0.18, 0, -0.117839, 0, 0.136066, 0.265096, -0.393001, -0.038353 )
 
 [node name="Cube004" parent="PersonDrunk/PersonModel2/char_explain2/Armature/Skeleton" index="0"]
-material/0 = SubResource( 125 )
-material/1 = SubResource( 126 )
-material/2 = SubResource( 127 )
-material/3 = SubResource( 128 )
+material/0 = SubResource( 122 )
+material/1 = SubResource( 123 )
+material/2 = SubResource( 124 )
+material/3 = SubResource( 125 )
 
 [node name="PersonCovens" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.23862, 0.681496, -4.18009 )
@@ -1379,18 +1367,18 @@ dialogue_audio = [ ExtResource( 51 ), ExtResource( 53 ), ExtResource( 54 ), ExtR
 transform = Transform( -7.86805e-09, 0, 0.18, 0, 0.18, 0, -0.18, 0, -7.86805e-09, 0.147846, -0.696026, -0.257049 )
 
 [node name="Cube004" parent="PersonCovens/PersonModel/char_sitdown/Armature/Skeleton" index="0"]
-material/0 = SubResource( 129 )
-material/1 = SubResource( 130 )
-material/2 = SubResource( 131 )
-material/3 = SubResource( 132 )
+material/0 = SubResource( 126 )
+material/1 = SubResource( 127 )
+material/2 = SubResource( 128 )
+material/3 = SubResource( 129 )
 
 [node name="PersonModel2" parent="PersonCovens" instance=ExtResource( 57 )]
 transform = Transform( 0.00997572, 0, 0.179723, 0, 0.18, 0, -0.179723, 0, 0.00997572, 0.0749824, -0.393478, 0.291979 )
 
 [node name="Cube004" parent="PersonCovens/PersonModel2/char_idle2/Armature/Skeleton" index="0"]
-material/0 = SubResource( 133 )
-material/1 = SubResource( 134 )
-material/3 = SubResource( 135 )
+material/0 = SubResource( 130 )
+material/1 = SubResource( 131 )
+material/3 = SubResource( 132 )
 
 [node name="PersonCrowd1" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.27707, 0.681496, -6.80097 )
@@ -1401,10 +1389,10 @@ dialogue_audio = [ ExtResource( 82 ), ExtResource( 81 ), ExtResource( 83 ) ]
 transform = Transform( 0.0784745, 0, 0.161993, 0, 0.18, 0, -0.161993, 0, 0.0784745, 0.456504, -0.378928, 0.0213518 )
 
 [node name="Cube004" parent="PersonCrowd1/PersonModel/char_search/Armature/Skeleton" index="0"]
-material/0 = SubResource( 136 )
-material/1 = SubResource( 137 )
-material/2 = SubResource( 138 )
-material/3 = SubResource( 139 )
+material/0 = SubResource( 133 )
+material/1 = SubResource( 134 )
+material/2 = SubResource( 135 )
+material/3 = SubResource( 136 )
 
 [node name="PersonWitchDance" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1757, 0.681496, 0.522913 )
@@ -1418,18 +1406,18 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.323201 )
 transform = Transform( -0.099215, 0, 0.150188, 0, 0.18, 0, -0.150188, 0, -0.099215, 0.443331, -0.26483, -0.664642 )
 
 [node name="Cube004" parent="PersonWitchDance/PersonModel/char_dance5/Armature/Skeleton" index="0"]
-material/0 = SubResource( 140 )
-material/1 = SubResource( 141 )
-material/2 = SubResource( 143 )
+material/0 = SubResource( 137 )
+material/1 = SubResource( 138 )
+material/2 = SubResource( 140 )
 
 [node name="PersonModel2" parent="PersonWitchDance" instance=ExtResource( 36 )]
 transform = Transform( 0.18, 0, 0, 0, 0.18, 0, 0, 0, 0.18, 0.60581, -0.345709, 0.170303 )
 
 [node name="Cube004" parent="PersonWitchDance/PersonModel2/char_dance4/Armature/Skeleton" index="0"]
-material/0 = SubResource( 144 )
-material/1 = SubResource( 145 )
-material/2 = SubResource( 146 )
-material/3 = SubResource( 147 )
+material/0 = SubResource( 141 )
+material/1 = SubResource( 142 )
+material/2 = SubResource( 143 )
+material/3 = SubResource( 144 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 60 )
@@ -1444,7 +1432,7 @@ door_sound = ExtResource( 80 )
 interact_text = "Examine"
 
 [node name="CollisionShape" parent="Door" index="0"]
-shape = SubResource( 148 )
+shape = SubResource( 145 )
 
 [editable path="Club/club"]
 [editable path="Props/DanceFloor/disco_floor"]

@@ -99,7 +99,7 @@ shader_param/color = Color( 0, 0, 0, 1 )
 shader = ExtResource( 2 )
 shader_param/color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="Environment" id=44]
+[sub_resource type="Environment" id=22]
 background_mode = 1
 fog_color = Color( 1, 0, 0, 1 )
 fog_depth_begin = 0.0
@@ -300,7 +300,7 @@ material/2 = SubResource( 21 )
 material/3 = SubResource( 21 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 44 )
+environment = SubResource( 22 )
 
 [node name="Door2" parent="." instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.71893, 0.71286, -2.21614 )

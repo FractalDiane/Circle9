@@ -17,11 +17,11 @@
 [ext_resource path="res://prefabs/door.tscn" type="PackedScene" id=15]
 [ext_resource path="res://textures/picture5.png" type="Texture" id=16]
 [ext_resource path="res://textures/picture1.png" type="Texture" id=17]
+[ext_resource path="res://audio/music/death.ogg" type="AudioStream" id=18]
 [ext_resource path="res://audio/door.ogg" type="AudioStream" id=19]
 [ext_resource path="res://audio/whoosh.ogg" type="AudioStream" id=20]
 [ext_resource path="res://textures/red.png" type="Texture" id=33]
 [ext_resource path="res://models/props/circle_9_sign.glb" type="PackedScene" id=59]
-[ext_resource path="res://audio/music/club.ogg" type="AudioStream" id=60]
 [ext_resource path="res://prefabs/props/couch.tscn" type="PackedScene" id=61]
 [ext_resource path="res://models/props/picture_frame.glb" type="PackedScene" id=69]
 [ext_resource path="res://prefabs/props/speaker.tscn" type="PackedScene" id=70]
@@ -33,7 +33,7 @@
 [ext_resource path="res://models/props/fixture3.glb" type="PackedScene" id=76]
 [ext_resource path="res://models/props/picture_wall.glb" type="PackedScene" id=77]
 
-[sub_resource type="Environment" id=44]
+[sub_resource type="Environment" id=1]
 background_mode = 1
 fog_color = Color( 1, 0, 0, 1 )
 fog_depth_begin = 0.0
@@ -216,7 +216,7 @@ shader_param/color = Color( 0.0156863, 0.0156863, 0.0156863, 1 )
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.243137, 0.243137, 0.243137, 1 )
 
-[sub_resource type="ShaderMaterial" id=59]
+[sub_resource type="ShaderMaterial" id=44]
 shader = ExtResource( 3 )
 shader_param/color = Color( 0.752941, 0.752941, 0.752941, 1 )
 
@@ -306,7 +306,7 @@ uv1_offset = Vector3( -1.519, -0.083, 0 )
 [node name="Club" type="Spatial"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 44 )
+environment = SubResource( 1 )
 
 [node name="Club" type="StaticBody" parent="."]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -21.827, 0, 0 )
@@ -613,7 +613,7 @@ transform = Transform( 0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, -7.53425, 2.43815, -1
 
 [node name="Cube002" parent="Props/disco_ball" index="0"]
 material/0 = SubResource( 43 )
-material/1 = SubResource( 59 )
+material/1 = SubResource( 44 )
 
 [node name="camera1" parent="Props" instance=ExtResource( 72 )]
 transform = Transform( -0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, 5.29183, 1.44711, 3.66816 )
@@ -718,8 +718,9 @@ material/0 = SubResource( 51 )
 [node name="People" type="Node" parent="."]
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 60 )
-volume_db = -12.0
+stream = ExtResource( 18 )
+volume_db = -6.0
+autoplay = true
 bus = "Club Music"
 
 [node name="Door2" parent="." instance=ExtResource( 15 )]

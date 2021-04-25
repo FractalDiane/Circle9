@@ -1,4 +1,4 @@
-[gd_scene load_steps=162 format=2]
+[gd_scene load_steps=164 format=2]
 
 [ext_resource path="res://models/geometry/club.glb" type="PackedScene" id=1]
 [ext_resource path="res://prefabs/player.tscn" type="PackedScene" id=2]
@@ -38,9 +38,10 @@
 [ext_resource path="res://textures/picture5.png" type="Texture" id=36]
 [ext_resource path="res://audio/dialogue/contract_4.ogg" type="AudioStream" id=37]
 [ext_resource path="res://audio/dialogue/contract_2.ogg" type="AudioStream" id=38]
+[ext_resource path="res://audio/music/death.ogg" type="AudioStream" id=39]
+[ext_resource path="res://prefabs/characters/char_search.tscn" type="PackedScene" id=40]
 [ext_resource path="res://prefabs/characters/char_stern.tscn" type="PackedScene" id=56]
 [ext_resource path="res://models/props/circle_9_sign.glb" type="PackedScene" id=59]
-[ext_resource path="res://audio/music/club.ogg" type="AudioStream" id=60]
 [ext_resource path="res://prefabs/props/couch.tscn" type="PackedScene" id=61]
 [ext_resource path="res://prefabs/characters/char_idle3.tscn" type="PackedScene" id=68]
 [ext_resource path="res://models/props/picture_frame.glb" type="PackedScene" id=69]
@@ -527,6 +528,10 @@ albedo_texture = ExtResource( 33 )
 uv1_scale = Vector3( 2, 3, 1 )
 uv1_offset = Vector3( -0.467, 0.095, 0 )
 
+[sub_resource type="ShaderMaterial" id=110]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0, 0, 0, 1 )
+
 [node name="Club" type="Spatial"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -1010,8 +1015,9 @@ material/1 = SubResource( 70 )
 transform = Transform( 1, 0, -1.49012e-08, 0, 1, 0, 1.49012e-08, 0, 1, -0.0140591, 1.70164, -0.0487881 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 60 )
-volume_db = -12.0
+stream = ExtResource( 39 )
+volume_db = -6.0
+autoplay = true
 bus = "Club Music"
 
 [node name="PersonAnnouncement" parent="." instance=ExtResource( 7 )]
@@ -1110,7 +1116,7 @@ material/2 = SubResource( 99 )
 
 [node name="PersonSummon" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.14889, 0.482079, -10.7143 )
-dialogue_subtitles = [ "Did you summon the demon?", "Yes.", "Is it willing to cooperate?", "It's not like it has a choice.", "...Right. Forgot about the contract part." ]
+dialogue_subtitles = [ "Did you summon the demon?", "Yes.", "Is it willing to cooperate?", "It's not like it has a choice.", "Oh... right. Forgot about the contract part." ]
 dialogue_audio = [ ExtResource( 31 ), ExtResource( 38 ), ExtResource( 30 ), ExtResource( 37 ), ExtResource( 32 ) ]
 
 [node name="PersonModel" parent="PersonSummon" instance=ExtResource( 26 )]
@@ -1176,6 +1182,15 @@ transform = Transform( 1.62066, 3.55271e-15, 1.06581e-14, 0, 2.09675, -0.105237,
 mesh = SubResource( 105 )
 material/0 = SubResource( 106 )
 material/1 = SubResource( 109 )
+
+[node name="PersonModel6" parent="." instance=ExtResource( 40 )]
+transform = Transform( -0.0570612, 0, -0.170716, 0, 0.18, 0, 0.170716, 0, -0.0570612, -0.289007, 0.25087, -0.601385 )
+
+[node name="Cube004" parent="PersonModel6/char_search/Armature/Skeleton" index="0"]
+material/0 = SubResource( 110 )
+material/1 = SubResource( 110 )
+material/2 = SubResource( 110 )
+material/3 = SubResource( 110 )
 
 [editable path="Club/club"]
 [editable path="Props/DanceFloor/disco_floor"]
@@ -1253,3 +1268,5 @@ material/1 = SubResource( 109 )
 [editable path="picture_wall"]
 [editable path="picture_wall2"]
 [editable path="picture_wall3"]
+[editable path="PersonModel6"]
+[editable path="PersonModel6/char_search"]

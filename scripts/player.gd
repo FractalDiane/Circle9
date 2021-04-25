@@ -1,6 +1,6 @@
 extends KinematicBody
 
-const NINETY_RAD := deg2rad(90)
+const NINETY_RAD := deg2rad(89.9)
 
 export(float) var speed := 5.0
 export(bool) var allow_input := true
@@ -22,6 +22,8 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if allow_input:
 		var cam_xform := camera.get_global_transform()
+		cam_xform.basis[2].y = 0
+		cam_xform.basis[2] = cam_xform.basis[2].normalized()
 		var motion_target := Vector3()
 		motion_target += -cam_xform.basis[2] * Input.get_action_strength("move_forward")
 		motion_target += cam_xform.basis[2] * Input.get_action_strength("move_back")
