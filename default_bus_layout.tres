@@ -44,13 +44,13 @@ band_db/11000_hz = -60.0
 band_db/16000_hz = -60.0
 band_db/22000_hz = -60.0
 
-[sub_resource type="AudioEffectReverb" id=5]
+[sub_resource type="AudioEffectReverb" id=4]
 resource_name = "Reverb"
 room_size = 0.2
 damping = 0.65
 wet = 0.34
 
-[sub_resource type="AudioEffectFilter" id=4]
+[sub_resource type="AudioEffectFilter" id=5]
 resource_name = "Filter"
 cutoff_hz = 375.0
 
@@ -85,7 +85,7 @@ bus/4/volume_db = 6.02
 bus/4/send = "Master"
 bus/4/effect/0/effect = SubResource( 3 )
 bus/4/effect/0/enabled = true
-bus/4/effect/1/effect = SubResource( 5 )
+bus/4/effect/1/effect = SubResource( 4 )
 bus/4/effect/1/enabled = true
 bus/5/name = "Club Music"
 bus/5/solo = false
@@ -93,5 +93,5 @@ bus/5/mute = false
 bus/5/bypass_fx = false
 bus/5/volume_db = 0.0
 bus/5/send = "Master"
-bus/5/effect/0/effect = SubResource( 4 )
+bus/5/effect/0/effect = SubResource( 5 )
 bus/5/effect/0/enabled = true
