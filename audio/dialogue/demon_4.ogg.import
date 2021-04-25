@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/demon_4.ogg-96049cf7d21ea73e966bc6f913a394dd.oggstr"
+
+[deps]
+
+source_file="res://audio/dialogue/demon_4.ogg"
+dest_files=[ "res://.import/demon_4.ogg-96049cf7d21ea73e966bc6f913a394dd.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

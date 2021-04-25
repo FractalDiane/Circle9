@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/witchworry_5.ogg-076981bd8311e2ac5a5a3d38921d363b.oggstr"
+
+[deps]
+
+source_file="res://audio/dialogue/witchworry_5.ogg"
+dest_files=[ "res://.import/witchworry_5.ogg-076981bd8311e2ac5a5a3d38921d363b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

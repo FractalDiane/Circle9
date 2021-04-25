@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/confront_5.ogg-22080ac196bdb2f157c16ea0ef5601ee.oggstr"
+
+[deps]
+
+source_file="res://audio/dialogue/confront_5.ogg"
+dest_files=[ "res://.import/confront_5.ogg-22080ac196bdb2f157c16ea0ef5601ee.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
