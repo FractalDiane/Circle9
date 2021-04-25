@@ -41,6 +41,7 @@ void fragment() {
 shader = SubResource( 3 )
 
 [node name="PlayerUI" type="CanvasLayer"]
+layer = 5
 script = ExtResource( 2 )
 
 [node name="Control" type="Control" parent="."]

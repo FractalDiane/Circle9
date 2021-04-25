@@ -1,4 +1,4 @@
-[gd_scene load_steps=160 format=2]
+[gd_scene load_steps=162 format=2]
 
 [ext_resource path="res://models/geometry/club.glb" type="PackedScene" id=1]
 [ext_resource path="res://prefabs/player.tscn" type="PackedScene" id=2]
@@ -36,6 +36,8 @@
 [ext_resource path="res://textures/picture4.png" type="Texture" id=34]
 [ext_resource path="res://prefabs/characters/char_authority.tscn" type="PackedScene" id=35]
 [ext_resource path="res://textures/picture5.png" type="Texture" id=36]
+[ext_resource path="res://audio/dialogue/contract_4.ogg" type="AudioStream" id=37]
+[ext_resource path="res://audio/dialogue/contract_2.ogg" type="AudioStream" id=38]
 [ext_resource path="res://prefabs/characters/char_stern.tscn" type="PackedScene" id=56]
 [ext_resource path="res://models/props/circle_9_sign.glb" type="PackedScene" id=59]
 [ext_resource path="res://audio/music/club.ogg" type="AudioStream" id=60]
@@ -1109,7 +1111,7 @@ material/2 = SubResource( 99 )
 [node name="PersonSummon" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.14889, 0.482079, -10.7143 )
 dialogue_subtitles = [ "Did you summon the demon?", "Yes.", "Is it willing to cooperate?", "It's not like it has a choice.", "...Right. Forgot about the contract part." ]
-dialogue_audio = [ ExtResource( 31 ), null, ExtResource( 30 ), null, ExtResource( 32 ) ]
+dialogue_audio = [ ExtResource( 31 ), ExtResource( 38 ), ExtResource( 30 ), ExtResource( 37 ), ExtResource( 32 ) ]
 
 [node name="PersonModel" parent="PersonSummon" instance=ExtResource( 26 )]
 transform = Transform( -0.18, 0, -1.57361e-08, 0, 0.18, 0, 1.57361e-08, 0, -0.18, -0.409199, -0.198211, -0.23523 )
