@@ -85,7 +85,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DialogueText" type="Label" parent="UI/Control"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UI"]
+anims/fadein = SubResource( 5 )
+
+[node name="UI2" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="UI2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogueText" type="Label" parent="UI2/Control"]
 visible = false
 anchor_left = 0.5
 anchor_top = 1.0
@@ -107,9 +119,6 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="UI"]
-anims/fadein = SubResource( 5 )
 
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
 [connection signal="body_exited" from="Area" to="." method="_on_Area_body_exited"]

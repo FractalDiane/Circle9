@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/incident_6.ogg-78cf284de464483e9a3faa18723be428.oggstr"
+
+[deps]
+
+source_file="res://audio/dialogue/incident_6.ogg"
+dest_files=[ "res://.import/incident_6.ogg-78cf284de464483e9a3faa18723be428.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

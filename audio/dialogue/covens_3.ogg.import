@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/covens_3.ogg-534c7ff29b917831fcfb7ae81f192dfd.oggstr"
+
+[deps]
+
+source_file="res://audio/dialogue/covens_3.ogg"
+dest_files=[ "res://.import/covens_3.ogg-534c7ff29b917831fcfb7ae81f192dfd.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

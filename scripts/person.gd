@@ -9,7 +9,7 @@ var talking := false
 var dialogue_page := 0
 
 onready var dialogue_player := $SoundDialogue as AudioStreamPlayer
-onready var dialogue_text := $UI/Control/DialogueText as Label
+onready var dialogue_text := $UI2/Control/DialogueText as Label
 
 
 func _process(_delta: float) -> void:
@@ -31,7 +31,8 @@ func play_dialogue() -> void:
 
 func _on_Area_body_entered(_body: Node) -> void:
 	in_area = true
-	PlayerUI.show_interact(true, "Listen")
+	if not talking:
+		PlayerUI.show_interact(true, "Listen")
 
 
 func _on_Area_body_exited(_body: Node) -> void:

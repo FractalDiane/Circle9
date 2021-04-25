@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bartender_1.ogg-712cc9bb1b34a487abefb8e0f9ec3193.oggstr"
+
+[deps]
+
+source_file="res://audio/dialogue/bartender_1.ogg"
+dest_files=[ "res://.import/bartender_1.ogg-712cc9bb1b34a487abefb8e0f9ec3193.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
