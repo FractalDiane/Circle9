@@ -38,7 +38,7 @@ func _physics_process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if allow_input and event is InputEventMouseMotion:
-		rotate_camera(event.get_relative() * get_physics_process_delta_time() * 0.1)
+		rotate_camera(event.get_relative() * get_physics_process_delta_time() * 0.12)
 		
 		
 func rotate_camera(move: Vector2) -> void:

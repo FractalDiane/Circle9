@@ -1,12 +1,490 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://models/geometry/club.glb" type="PackedScene" id=1]
 [ext_resource path="res://prefabs/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://materials/flat.shader" type="Shader" id=3]
+[ext_resource path="res://prefabs/props/table.tscn" type="PackedScene" id=4]
+[ext_resource path="res://models/props/disco_floor.glb" type="PackedScene" id=5]
+[ext_resource path="res://models/props/dj_table.glb" type="PackedScene" id=6]
+[ext_resource path="res://prefabs/person.tscn" type="PackedScene" id=7]
+[ext_resource path="res://prefabs/props/door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://models/props/glass.glb" type="PackedScene" id=9]
+[ext_resource path="res://models/props/cup.glb" type="PackedScene" id=10]
+[ext_resource path="res://models/props/bottle1.glb" type="PackedScene" id=11]
+[ext_resource path="res://prefabs/props/big_chair.tscn" type="PackedScene" id=12]
+[ext_resource path="res://models/props/table2.glb" type="PackedScene" id=13]
+[ext_resource path="res://prefabs/characters/char_explain.tscn" type="PackedScene" id=14]
+[ext_resource path="res://prefabs/characters/char_bartender.tscn" type="PackedScene" id=15]
+[ext_resource path="res://prefabs/characters/char_walllean.tscn" type="PackedScene" id=16]
+[ext_resource path="res://prefabs/characters/char_sit1.tscn" type="PackedScene" id=17]
+[ext_resource path="res://prefabs/characters/char_sit2.tscn" type="PackedScene" id=18]
+
+[sub_resource type="Environment" id=74]
+background_mode = 1
+tonemap_mode = 1
+glow_enabled = true
+glow_intensity = 0.1
+glow_bloom = 0.52
+glow_blend_mode = 1
+glow_bicubic_upscale = true
+
+[sub_resource type="ShaderMaterial" id=75]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.113725, 0.109804, 0.152941, 1 )
+
+[sub_resource type="ShaderMaterial" id=76]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.0352941, 0.0313726, 0.0666667, 1 )
+
+[sub_resource type="ShaderMaterial" id=77]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.0588235, 0.054902, 0.109804, 1 )
+
+[sub_resource type="ShaderMaterial" id=78]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.0745098, 0.0705882, 0.117647, 1 )
+
+[sub_resource type="ShaderMaterial" id=79]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.0313726, 0.027451, 0.0352941, 1 )
+
+[sub_resource type="ShaderMaterial" id=80]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.2, 0.203922, 0.309804, 1 )
+
+[sub_resource type="CubeMesh" id=81]
+size = Vector3( 2.5, 0.8, 0.5 )
+
+[sub_resource type="ShaderMaterial" id=82]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.164706, 0.12549, 0.207843, 1 )
+
+[sub_resource type="CubeMesh" id=83]
+size = Vector3( 3.5, 0.8, 0.5 )
+
+[sub_resource type="BoxShape" id=84]
+extents = Vector3( 1.25, 1, 2.2 )
+
+[sub_resource type="ShaderMaterial" id=85]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.0823529, 0.0745098, 0.14902, 1 )
+
+[sub_resource type="ShaderMaterial" id=86]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.545098, 0.968627, 0.427451, 1 )
+
+[sub_resource type="ShaderMaterial" id=87]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.968627, 0.921569, 0.427451, 1 )
+
+[sub_resource type="ShaderMaterial" id=88]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.921569, 0.341176, 0.341176, 1 )
+
+[sub_resource type="ShaderMaterial" id=89]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.87451, 0.427451, 0.968627, 1 )
+
+[sub_resource type="ShaderMaterial" id=90]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.427451, 0.905882, 0.968627, 1 )
+
+[sub_resource type="ShaderMaterial" id=91]
+shader = ExtResource( 3 )
+shader_param/color = Color( 1, 0.564706, 0.180392, 1 )
+
+[sub_resource type="BoxShape" id=92]
+extents = Vector3( 2.75, 1, 2.75 )
+
+[sub_resource type="ShaderMaterial" id=93]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.12549, 0.121569, 0.164706, 1 )
+
+[sub_resource type="ShaderMaterial" id=94]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+
+[sub_resource type="ShaderMaterial" id=95]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.215686, 0.207843, 0.290196, 1 )
+
+[sub_resource type="BoxShape" id=96]
+extents = Vector3( 0.5, 0.25, 0.25 )
+
+[sub_resource type="ShaderMaterial" id=97]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.121569, 0.188235, 0.219608, 1 )
+
+[sub_resource type="ShaderMaterial" id=98]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.2, 0.431373, 0.580392, 1 )
+
+[sub_resource type="ShaderMaterial" id=99]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.227451, 0.254902, 0.356863, 1 )
+
+[sub_resource type="ShaderMaterial" id=100]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.486275, 0.176471, 0.176471, 1 )
+
+[sub_resource type="ShaderMaterial" id=101]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.423529, 0.407843, 0.329412, 1 )
+
+[sub_resource type="ShaderMaterial" id=102]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.188235, 0.0901961, 0.0588235, 1 )
+
+[sub_resource type="ShaderMaterial" id=103]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.129412, 0.0823529, 0.0588235, 1 )
+
+[sub_resource type="BoxShape" id=104]
+extents = Vector3( 1, 1, 0.280822 )
+
+[sub_resource type="Shader" id=73]
+code = "shader_type spatial;
+render_mode unshaded;
+
+uniform vec4 color : hint_color = vec4(1f);
+
+void fragment() {
+	ALBEDO = color.rgb;
+}
+"
+
+[sub_resource type="ShaderMaterial" id=115]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.623529, 0.470588, 0.415686, 1 )
+
+[sub_resource type="ShaderMaterial" id=116]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.0823529, 0.0823529, 0.0823529, 1 )
+
+[sub_resource type="ShaderMaterial" id=117]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.0235294, 0.0235294, 0.0235294, 1 )
+
+[sub_resource type="ShaderMaterial" id=105]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.419608, 0.345098, 0.247059, 1 )
+
+[sub_resource type="ShaderMaterial" id=33]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.262745, 0.392157, 0.266667, 1 )
+
+[sub_resource type="ShaderMaterial" id=106]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.0862745, 0.0941176, 0.231373, 1 )
+
+[sub_resource type="ShaderMaterial" id=107]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.101961, 0.101961, 0.101961, 1 )
+
+[sub_resource type="ShaderMaterial" id=108]
+shader = ExtResource( 3 )
+shader_param/color = Color( 0.207843, 0.137255, 0.0666667, 1 )
+
+[sub_resource type="ShaderMaterial" id=109]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.298039, 0.254902, 0.407843, 1 )
+
+[sub_resource type="ShaderMaterial" id=110]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.0705882, 0.0862745, 0.0705882, 1 )
+
+[sub_resource type="ShaderMaterial" id=111]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.117647, 0.117647, 0.117647, 1 )
+
+[sub_resource type="ShaderMaterial" id=114]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.439216, 0.337255, 0.243137, 1 )
+
+[sub_resource type="ShaderMaterial" id=112]
+shader = SubResource( 73 )
+shader_param/color = Color( 0.376471, 0.290196, 0.207843, 1 )
+
+[sub_resource type="ShaderMaterial" id=113]
+shader = SubResource( 73 )
+shader_param/color = Color( 0, 0, 0, 1 )
 
 [node name="Club" type="Spatial"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 74 )
+
 [node name="club" parent="." instance=ExtResource( 1 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -21.827, 0, 0 )
+
+[node name="Cube019" parent="club" index="0"]
+material/0 = SubResource( 75 )
+material/1 = SubResource( 76 )
+material/2 = SubResource( 77 )
+material/3 = SubResource( 78 )
+material/4 = SubResource( 79 )
+material/5 = SubResource( 80 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.465487, 3.96379 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.88391, 0.465487, 2.79936 )
+
+[node name="Props" type="Node" parent="."]
+
+[node name="Bar" type="StaticBody" parent="Props"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81123, 0.364576, -5.7913 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MeshInstance" type="MeshInstance" parent="Props/Bar"]
+mesh = SubResource( 81 )
+material/0 = SubResource( 82 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Props/Bar"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.92042 )
+mesh = SubResource( 81 )
+material/0 = SubResource( 82 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Props/Bar"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.00053, 0, 1.96209 )
+mesh = SubResource( 83 )
+material/0 = SubResource( 82 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Props/Bar"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.95164 )
+shape = SubResource( 84 )
+
+[node name="DanceFloor" type="StaticBody" parent="Props"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.46415, 0.442288, -0.93379 )
+
+[node name="disco_floor" parent="Props/DanceFloor" instance=ExtResource( 5 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.271143, 0.34017, -0.426264 )
+
+[node name="Cube066" parent="Props/DanceFloor/disco_floor" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.30586, -1.94766, 0 )
+material/0 = SubResource( 85 )
+material/1 = SubResource( 86 )
+material/2 = SubResource( 87 )
+material/3 = SubResource( 88 )
+material/4 = SubResource( 89 )
+material/5 = SubResource( 90 )
+material/6 = SubResource( 91 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Props/DanceFloor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.960565, -1.08929, -0.422695 )
+shape = SubResource( 92 )
+
+[node name="Table" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.20945, 0.560372, 0.956403 )
+
+[node name="Table2" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.69635, 0.560372, -0.442001 )
+
+[node name="Table4" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.12565, 0.560372, -3.29479 )
+
+[node name="Table5" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.09725, 0.560372, -6.64462 )
+
+[node name="Table6" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.502561, 0.560372, -9.91426 )
+
+[node name="Table3" parent="Props" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.945148, 0.560372, 1.48229 )
+
+[node name="BigChair" parent="Props" instance=ExtResource( 12 )]
+transform = Transform( 0.533113, 0, -0.846044, 0, 1, 0, 0.846044, 0, 0.533113, 4.29159, 0.5634, -10.1457 )
+
+[node name="BigChair2" parent="Props" instance=ExtResource( 12 )]
+transform = Transform( -0.0141018, 0, -0.999901, 0, 1, 0, 0.999901, 0, -0.0141018, 4.48596, 0.5634, -8.81153 )
+
+[node name="DjTable" type="StaticBody" parent="Props"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.42205, 0.532815, 2.3486 )
+
+[node name="dj_table" parent="Props/DjTable" instance=ExtResource( 6 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+
+[node name="Cube001" parent="Props/DjTable/dj_table" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+material/0 = SubResource( 93 )
+material/1 = SubResource( 94 )
+material/2 = SubResource( 95 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Props/DjTable"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0273139, 0 )
+shape = SubResource( 96 )
+
+[node name="Door" parent="Props" instance=ExtResource( 8 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.90585, 0.836019, -4.56703 )
+
+[node name="Door2" parent="Props" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -9.36095, 0.844512, -11.2507 )
+
+[node name="bottle1" parent="Props" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.57136, 0.96666, -5.65307 )
+
+[node name="Cylinder002" parent="Props/bottle1" index="0"]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+material/0 = SubResource( 97 )
+material/1 = SubResource( 98 )
+
+[node name="bottle2" parent="Props" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.55366, 0.96666, -5.84221 )
+
+[node name="Cylinder002" parent="Props/bottle2" index="0"]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+material/0 = SubResource( 97 )
+material/1 = SubResource( 98 )
+
+[node name="cup" parent="Props" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.80017, 0.826755, -5.30644 )
+
+[node name="Cylinder001" parent="Props/cup" index="0"]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+material/0 = SubResource( 99 )
+
+[node name="cup3" parent="Props" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.27237, 0.831819, -3.34014 )
+
+[node name="Cylinder001" parent="Props/cup3" index="0"]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+material/0 = SubResource( 99 )
+
+[node name="cup2" parent="Props" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.16549, 0.826755, -5.66658 )
+
+[node name="Cylinder001" parent="Props/cup2" index="0"]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+material/0 = SubResource( 99 )
+
+[node name="glass" parent="Props" instance=ExtResource( 9 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 3.82305, 0.827007, -5.08675 )
+
+[node name="Cylinder003" parent="Props/glass" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.547165, 0.000608444, -0.296932 )
+material/0 = SubResource( 99 )
+material/1 = SubResource( 100 )
+
+[node name="glass3" parent="Props" instance=ExtResource( 9 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 5.51885, 0.827007, -1.71966 )
+
+[node name="Cylinder003" parent="Props/glass3" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.547165, 0.000608444, -0.296932 )
+material/0 = SubResource( 99 )
+material/1 = SubResource( 101 )
+
+[node name="glass2" parent="Props" instance=ExtResource( 9 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 2.65521, 0.83639, -0.312774 )
+
+[node name="Cylinder003" parent="Props/glass2" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.547165, 0.000608444, -0.296932 )
+material/0 = SubResource( 99 )
+material/1 = SubResource( 102 )
+
+[node name="Table7" type="StaticBody" parent="Props"]
+transform = Transform( 0.147878, 0, -0.989006, 0, 1, 0, 0.989006, 0, 0.147878, 3.3468, 0.36912, -9.30576 )
+
+[node name="table2" parent="Props/Table7" instance=ExtResource( 13 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0 )
+
+[node name="Cube009" parent="Props/Table7/table2" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+material/0 = SubResource( 103 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Props/Table7"]
+transform = Transform( 0.760389, 0, -1.49012e-08, 0, 1, 0, -7.45058e-09, 0, 1.03206, -1.90735e-06, 0, -0.00521088 )
+shape = SubResource( 104 )
+
+[node name="PersonWitches" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.840848, 0.681496, 0 )
+dialogue_subtitles = [ "Glen, who are those people in the black cloaks?", "Witches. I think that symbol on their cloaks means they're from the Navilo coven.", "Are they... dangerous?", "Nah. They're all talk. They just like to strut around this club like they own the place. Which is only partially true.", "As long as you stay out of their way, you're good." ]
+
+[node name="PersonBartender" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.69043, 0.681496, -4.41145 )
+dialogue_subtitles = [ "What can I get you, sir?", "Fénix Bermillón, on the rocks. Top shelf rosolio, blood orange garnish, and put a dust of salt in it.", "Got it, sir. Are you from the Navilo coven?", "Yes. We run this club. You should know us by now.", "...Sorry." ]
+
+[node name="PersonModel" parent="PersonBartender" instance=ExtResource( 15 )]
+transform = Transform( -0.01784, 0, 0.179114, 0, 0.18, 0, -0.179114, 0, -0.01784, 0.673416, -0.400915, -0.50899 )
+
+[node name="Cube004" parent="PersonBartender/PersonModel/char_bartender/Armature/Skeleton" index="0"]
+material/0 = SubResource( 115 )
+material/1 = SubResource( 116 )
+material/2 = SubResource( 117 )
+
+[node name="PersonIncident" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.00795, 0.712051, -1.1373 )
+dialogue_subtitles = [ "Did you hear what happened at the Foxtrot last Saturday?", "The Foxtrot... Is that the place owned by the Seruña coven?", "Yeah. Apparently some Navilo witches showed up, and... it got messy.", "The place was on fire. I think there were demons involved. People died.", "Wow...", "Yeah. This coven business is scary stuff..." ]
+
+[node name="PersonModel" parent="PersonIncident" instance=ExtResource( 14 )]
+transform = Transform( 0.108063, 0, 0.143953, 0, 0.18, 0, -0.143953, 0, 0.108063, 0.539819, -0.406156, 0.361137 )
+
+[node name="Cube004" parent="PersonIncident/PersonModel/char_explain/Armature/Skeleton" index="0"]
+material/0 = SubResource( 105 )
+material/1 = SubResource( 33 )
+material/2 = SubResource( 106 )
+material/3 = SubResource( 107 )
+
+[node name="PersonModel2" parent="PersonIncident" instance=ExtResource( 16 )]
+transform = Transform( -0.18, 0, -1.57361e-08, 0, 0.18, 0, 1.57361e-08, 0, -0.18, -0.132879, -0.428201, -0.40851 )
+
+[node name="Cube004" parent="PersonIncident/PersonModel2/char_walllean/Armature/Skeleton" index="0"]
+material/0 = SubResource( 108 )
+material/1 = SubResource( 109 )
+material/2 = SubResource( 110 )
+material/3 = SubResource( 111 )
+
+[node name="PersonWitchMeeting" parent="." instance=ExtResource( 7 )]
+transform = Transform( -0.0222511, 0, 0.999752, 0, 1, 0, -0.999752, 0, -0.0222511, 4.34871, 0.230559, -8.84479 )
+dialogue_subtitles = [ "What time's the client supposed to get here?", "Should already be here. Blue coat. Seruña sigil necklace.", "Haven't seen them.", "Don't worry. They'll find us eventually." ]
+
+[node name="PersonModel" parent="PersonWitchMeeting" instance=ExtResource( 17 )]
+transform = Transform( 0.179551, 0, -0.0127066, 0, 0.18, 0, 0.0127066, 0, 0.179551, -0.0158434, 0, -0.0157156 )
+
+[node name="Cube004" parent="PersonWitchMeeting/PersonModel/char_sit1/Armature/Skeleton" index="0"]
+material/0 = SubResource( 114 )
+
+[node name="PersonModel2" parent="PersonWitchMeeting" instance=ExtResource( 18 )]
+transform = Transform( 0.152544, 0, 0.0955533, 0, 0.18, 0, -0.0955533, 0, 0.152544, 1.21261, 0, -0.185642 )
+
+[node name="Cube004" parent="PersonWitchMeeting/PersonModel2/char_sit2/Armature/Skeleton" index="0"]
+material/0 = SubResource( 112 )
+material/1 = SubResource( 113 )
+
+[node name="PersonDrunk" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.12923, 0.681496, -10.6678 )
+dialogue_subtitles = [ "What are you doing? Don't go in there!", "Why the fuck not? Where's your spirit of adventure? Don't you wanna uncover the secrets of this place?", "Cal, how many glasses have you had? There's no \"secrets\" here.", "It's a club run by a bunch of witches! Witches always have secrets. Why the fuck do you think they skulk around in the shadows all day like the cockroaches they are?", "(Sigh) Can we go sit down now before you make someone mad?" ]
+
+[node name="PersonCovens" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.23862, 0.681496, -4.18009 )
+dialogue_subtitles = [ "I don't understand... Why do the two covens in this city hate each other so much?", "They... do things different ways. The Seruña don't like summoning demons. The Navilo do it all the time.", "They use different types of magick, they confide in different princes of hell... y'know. That sort of stuff.", "I wish they'd leave the rest of the city out of their fighting.", "Some people don't understand the concept of collateral damage." ]
+
+[node name="PersonCrowd1" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.27707, 0.681496, -6.80097 )
+dialogue_subtitles = [ "Elena! Are you in here? Elena!", "Damn it... where is she? I don't want us getting separated in here. I don't like this place." ]
+
+[node name="PersonWitchDance" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1757, 0.681496, 0.522913 )
+dialogue_subtitles = [ "Damn, girl! You've got some moves!", "Thanks. I took dance lessons in high school. Before all this witch nonsense happened.", "Why'd you become a witch if you didn't want to?", "It always ends up running in the family. My dad has been in the Navilo coven most of his life, so he roped me in as soon as he could.", "I'm not letting him drag me into all that coven tug-of-war bullshit, though. I don't care if the Seruña do things differently; witches are witches.", "I'm glad I don't have to deal with any of that.", "Yeah, be glad." ]
+
+[editable path="club"]
+[editable path="Props/DanceFloor/disco_floor"]
+[editable path="Props/DjTable/dj_table"]
+[editable path="Props/bottle1"]
+[editable path="Props/bottle2"]
+[editable path="Props/cup"]
+[editable path="Props/cup3"]
+[editable path="Props/cup2"]
+[editable path="Props/glass"]
+[editable path="Props/glass3"]
+[editable path="Props/glass2"]
+[editable path="Props/Table7/table2"]
+[editable path="PersonBartender/PersonModel"]
+[editable path="PersonBartender/PersonModel/char_bartender"]
+[editable path="PersonIncident/PersonModel"]
+[editable path="PersonIncident/PersonModel/char_explain"]
+[editable path="PersonIncident/PersonModel2"]
+[editable path="PersonIncident/PersonModel2/char_walllean"]
+[editable path="PersonWitchMeeting/PersonModel"]
+[editable path="PersonWitchMeeting/PersonModel/char_sit1"]
+[editable path="PersonWitchMeeting/PersonModel2"]
+[editable path="PersonWitchMeeting/PersonModel2/char_sit2"]
