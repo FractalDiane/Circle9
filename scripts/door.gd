@@ -27,16 +27,18 @@ func _process(_delta: float) -> void:
 
 
 func _on_Door_body_entered(body: Node) -> void:
-	in_area = true
-	player_ref = body
-	PlayerUI.show_interact(true, interact_text)
+	if not Controller.person_talking and Controller.player_ref.allow_input:
+		in_area = true
+		player_ref = body
+		PlayerUI.show_interact(true, interact_text)
 
 
 func _on_Door_body_exited(_body: Node) -> void:
-	in_area = false
-	player_ref = null
-	if not teleporting:
-		PlayerUI.show_interact(false, interact_text)
+	if not Controller.person_talking and Controller.player_ref.allow_input:
+		in_area = false
+		player_ref = null
+		if not teleporting:
+			PlayerUI.show_interact(false, interact_text)
 
 
 func _on_TimerTeleport_timeout() -> void:

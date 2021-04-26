@@ -7,16 +7,15 @@
 [sub_resource type="Environment" id=1]
 background_mode = 1
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 52
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 36
 font_data = ExtResource( 3 )
 
-[sub_resource type="Animation" id=2]
-resource_name = "end"
+[sub_resource type="Animation" id=4]
 length = 35.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/Control/Logo:self_modulate")
@@ -104,7 +103,7 @@ margin_left = 400.0
 margin_top = 456.0
 margin_right = 888.0
 margin_bottom = 536.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "By Diane Sparks"
 align = 1
 __meta__ = {
@@ -124,7 +123,7 @@ margin_left = 400.0
 margin_top = 24.0
 margin_right = 888.0
 margin_bottom = 80.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Featuring the voice talents of:"
 align = 1
 __meta__ = {
@@ -136,7 +135,7 @@ margin_left = -80.0
 margin_top = 104.0
 margin_right = 408.0
 margin_bottom = 1001.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Ariana Mertz
 Brandon Nguyen
 Rami Shreim
@@ -151,7 +150,7 @@ margin_left = 240.0
 margin_top = 104.0
 margin_right = 728.0
 margin_bottom = 1001.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Dorian Cromartie
 Lyndon de la Torre
 Brian Dizon
@@ -166,7 +165,7 @@ margin_left = 544.0
 margin_top = 104.0
 margin_right = 1032.0
 margin_bottom = 1001.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Kiara Mendaros
 James Bates
 Nathan Graves
@@ -181,7 +180,7 @@ margin_left = 848.0
 margin_top = 104.0
 margin_right = 1336.0
 margin_bottom = 1001.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Rhys Weathers
 The 8552nd Epic Man
 Nathan Hansen
@@ -196,7 +195,7 @@ margin_left = 200.0
 margin_top = 432.0
 margin_right = 1091.0
 margin_bottom = 679.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 3 )
 text = "Music by:
 
 Christian DeTamble - http://therefactory.bplaced.net
@@ -208,6 +207,7 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/end = SubResource( 2 )
+autoplay = "end"
+anims/end = SubResource( 4 )
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

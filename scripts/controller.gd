@@ -6,10 +6,6 @@ var menu_open := false
 var player_ref = null
 
 var person_talking := false
-
-
-func _ready() -> void:
-	fetch_player_ref()
 	
 
 func _process(_delta: float) -> void:

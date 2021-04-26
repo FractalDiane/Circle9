@@ -9,7 +9,7 @@
 [ext_resource path="res://audio/door.ogg" type="AudioStream" id=7]
 [ext_resource path="res://audio/wind.ogg" type="AudioStream" id=8]
 [ext_resource path="res://models/props/fixture2.glb" type="PackedScene" id=9]
-[ext_resource path="res://textures/ui/tutorial.png" type="Texture" id=10]
+[ext_resource path="res://textures/ui/tutorial2.png" type="Texture" id=10]
 [ext_resource path="res://scripts/scenes/outside.gd" type="Script" id=11]
 
 [sub_resource type="Environment" id=1]

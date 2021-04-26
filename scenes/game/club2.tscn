@@ -1187,9 +1187,10 @@ material/0 = SubResource( 106 )
 material/1 = SubResource( 109 )
 
 [node name="PersonModel6" parent="." instance=ExtResource( 40 )]
-transform = Transform( -0.0570612, 0, -0.170716, 0, 0.18, 0, 0.170716, 0, -0.0570612, -0.289007, 0.292283, -0.601385 )
+transform = Transform( -0.0570612, 0, -0.170716, 0, 0.18, 0, 0.170716, 0, -0.0570612, -2.68374, 0.30205, -6.30783 )
 
 [node name="Cube004" parent="PersonModel6/char_search/Armature/Skeleton" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 material/0 = SubResource( 110 )
 material/1 = SubResource( 110 )
 material/2 = SubResource( 110 )
