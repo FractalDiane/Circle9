@@ -1,0 +1,132 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://textures/red.png" type="Texture" id=1]
+[ext_resource path="res://prefabs/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://prefabs/person.tscn" type="PackedScene" id=3]
+[ext_resource path="res://audio/dialogue/end1_1.ogg" type="AudioStream" id=5]
+[ext_resource path="res://audio/dialogue/end1_3.ogg" type="AudioStream" id=6]
+[ext_resource path="res://audio/dialogue/end1_2.ogg" type="AudioStream" id=7]
+[ext_resource path="res://prefabs/characters/char_end1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://materials/flat.shader" type="Shader" id=9]
+[ext_resource path="res://prefabs/characters/char_explain.tscn" type="PackedScene" id=10]
+[ext_resource path="res://prefabs/characters/char_stern.tscn" type="PackedScene" id=11]
+[ext_resource path="res://audio/dialogue/end2_4.ogg" type="AudioStream" id=12]
+[ext_resource path="res://audio/dialogue/end2_3.ogg" type="AudioStream" id=13]
+[ext_resource path="res://audio/dialogue/end2_1.ogg" type="AudioStream" id=14]
+[ext_resource path="res://audio/dialogue/end2_2.ogg" type="AudioStream" id=15]
+[ext_resource path="res://prefabs/props/door.tscn" type="PackedScene" id=16]
+[ext_resource path="res://audio/door.ogg" type="AudioStream" id=17]
+[ext_resource path="res://prefabs/door.tscn" type="PackedScene" id=18]
+
+[sub_resource type="Environment" id=1]
+background_mode = 1
+background_color = Color( 0.0509804, 0, 0, 1 )
+fog_color = Color( 1, 0, 0, 1 )
+fog_depth_begin = 0.0
+fog_depth_end = 137.7
+tonemap_mode = 1
+glow_enabled = true
+glow_intensity = 0.1
+glow_bloom = 0.52
+glow_blend_mode = 1
+glow_bicubic_upscale = true
+adjustment_enabled = true
+adjustment_color_correction = ExtResource( 1 )
+
+[sub_resource type="SphereShape" id=2]
+radius = 2.0
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 9 )
+shader_param/color = Color( 0.811765, 0.635294, 0.52549, 1 )
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 9 )
+shader_param/color = Color( 0.294118, 0.529412, 0.776471, 1 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 9 )
+shader_param/color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=6]
+shader = ExtResource( 9 )
+shader_param/color = Color( 0.105882, 0.0862745, 0.270588, 1 )
+
+[sub_resource type="Animation" id=7]
+resource_name = "fadein"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/TextureRect:material:shader_param/alpha_scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[node name="End" type="Spatial"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.189852, 0.0290437 )
+
+[node name="Person" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.11791 )
+dialogue_subtitles = [ "What's more important? What do I protect?", "My family or my coven?", "Does witch blood really run deeper?" ]
+dialogue_audio = [ ExtResource( 5 ), ExtResource( 7 ), ExtResource( 6 ) ]
+
+[node name="CollisionShape" parent="Person/Area" index="0"]
+shape = SubResource( 2 )
+
+[node name="PersonModel" parent="Person" instance=ExtResource( 8 )]
+transform = Transform( -0.0316124, 0, 0.177202, 0, 0.18, 0, -0.177202, 0, -0.0316124, 0.917085, 1.19209e-07, -0.28092 )
+
+[node name="Cube004" parent="Person/PersonModel/char_end1/Armature/Skeleton" index="0"]
+material/0 = SubResource( 3 )
+material/1 = SubResource( 4 )
+material/2 = SubResource( 5 )
+material/3 = SubResource( 6 )
+
+[node name="Person2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14.3741 )
+dialogue_subtitles = [ "Hey, check this out! I got an invitation to a party at Circle 9.", "Hottest club in town. Invite only. It's a pretty big deal.", "I... realized I'm busy tonight, though. Do you want to take the invitation and go instead? Once in a lifetime opportunity, you know.", "Just take this necklace. They'll never be able to tell the difference." ]
+dialogue_audio = [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 12 ) ]
+
+[node name="CollisionShape" parent="Person2/Area" index="0"]
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" parent="Person2/UI" index="1"]
+anims/fadein = SubResource( 7 )
+
+[node name="PersonModel" parent="Person2" instance=ExtResource( 11 )]
+transform = Transform( 0.0127505, 0, -0.179548, 0, 0.18, 0, 0.179548, 0, 0.0127505, -0.392606, 0, -0.0580053 )
+
+[node name="PersonModel2" parent="Person2" instance=ExtResource( 10 )]
+transform = Transform( -0.0529303, 0, 0.172042, 0, 0.18, 0, -0.172042, 0, -0.0529303, 0.598145, 0, -0.218171 )
+
+[node name="Cube004" parent="Person2/PersonModel2/char_explain/Armature/Skeleton" index="0"]
+material/0 = SubResource( 3 )
+material/1 = SubResource( 4 )
+material/2 = SubResource( 5 )
+material/3 = SubResource( 6 )
+
+[node name="Door" parent="." instance=ExtResource( 16 )]
+transform = Transform( 1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 1.91847e-13, 0.524957, -18 )
+
+[node name="Door2" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.449244, -18.0201 )
+target_scene = "res://scenes/game/end2.tscn"
+door_sound = ExtResource( 17 )
+
+[editable path="Person"]
+[editable path="Person/PersonModel"]
+[editable path="Person/PersonModel/char_end1"]
+[editable path="Person2"]
+[editable path="Person2/PersonModel2"]
+[editable path="Person2/PersonModel2/char_explain"]

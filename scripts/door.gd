@@ -13,7 +13,7 @@ var teleporting := false
 
 
 func _process(_delta: float) -> void:
-	if in_area and Input.is_action_just_pressed("interact"):
+	if in_area and not Controller.person_talking and Controller.player_ref.allow_input and Input.is_action_just_pressed("interact"):
 		emit_signal("opened")
 		$SoundDoor.set_stream(door_sound)
 		$SoundDoor.play()

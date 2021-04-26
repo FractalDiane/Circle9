@@ -304,7 +304,7 @@ environment = SubResource( 22 )
 
 [node name="Door2" parent="." instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.71893, 0.71286, -2.21614 )
-target_scene = "res://scenes/game/room3.tscn"
+target_scene = "res://scenes/game/room4.tscn"
 door_sound = ExtResource( 13 )
 
 [editable path="Demon/demon2"]

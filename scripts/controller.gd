@@ -5,12 +5,19 @@ const PAUSE_MENU = preload("res://prefabs/pause_menu.tscn")
 var menu_open := false
 var player_ref = null
 
+var person_talking := false
+
+
+func _ready() -> void:
+	fetch_player_ref()
+	
+
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("fullscreen"):
 		OS.window_fullscreen = !OS.window_fullscreen
 		
 	if player_ref != null:
-		if not menu_open and player_ref.allow_input and Input.is_action_just_pressed("ui_cancel"):
+		if not menu_open and player_ref.allow_input and not person_talking and Input.is_action_just_pressed("ui_cancel"):
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			var menu := PAUSE_MENU.instance() as Control
 			get_tree().get_root().add_child(menu)
@@ -37,3 +44,13 @@ func change_scene(scene: String, position: Vector3) -> void:
 
 func play_intro_music() -> void:
 	$TimerIntroMusic.start()
+
+
+func play_end_music() -> void:
+	$MusicEnding.play()
+	
+	
+func fade_end_music() -> void:
+	var tween := $TweenEndMusicFade as Tween
+	tween.interpolate_property($MusicEnding, "volume_db", -8, -60, 3.0)
+	tween.start()

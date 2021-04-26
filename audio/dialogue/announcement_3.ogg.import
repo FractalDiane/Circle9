@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/announcement_3.ogg-5d39249a97ce76c56d5cd65ca2b3c4dc.oggstr"
+
+[deps]
+
+source_file="res://audio/dialogue/announcement_3.ogg"
+dest_files=[ "res://.import/announcement_3.ogg-5d39249a97ce76c56d5cd65ca2b3c4dc.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

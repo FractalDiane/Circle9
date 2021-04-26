@@ -1,4 +1,4 @@
-[gd_scene load_steps=164 format=2]
+[gd_scene load_steps=167 format=2]
 
 [ext_resource path="res://models/geometry/club.glb" type="PackedScene" id=1]
 [ext_resource path="res://prefabs/player.tscn" type="PackedScene" id=2]
@@ -40,6 +40,9 @@
 [ext_resource path="res://audio/dialogue/contract_2.ogg" type="AudioStream" id=38]
 [ext_resource path="res://audio/music/death.ogg" type="AudioStream" id=39]
 [ext_resource path="res://prefabs/characters/char_search.tscn" type="PackedScene" id=40]
+[ext_resource path="res://audio/dialogue/announcement_1.ogg" type="AudioStream" id=41]
+[ext_resource path="res://audio/dialogue/announcement_2.ogg" type="AudioStream" id=42]
+[ext_resource path="res://audio/dialogue/announcement_3.ogg" type="AudioStream" id=43]
 [ext_resource path="res://prefabs/characters/char_stern.tscn" type="PackedScene" id=56]
 [ext_resource path="res://models/props/circle_9_sign.glb" type="PackedScene" id=59]
 [ext_resource path="res://prefabs/props/couch.tscn" type="PackedScene" id=61]
@@ -1023,7 +1026,7 @@ bus = "Club Music"
 [node name="PersonAnnouncement" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47106, 0.412581, -1.12462 )
 dialogue_subtitles = [ "Everyone get out. Circle 9 is closed for the evening.", "What's going on?", "Nothing to worry about. The Navilo have some business to take care of." ]
-dialogue_audio = [ null, null, null ]
+dialogue_audio = [ ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ) ]
 
 [node name="Area" parent="PersonAnnouncement" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0486381, 0, -0.648882 )
@@ -1184,7 +1187,7 @@ material/0 = SubResource( 106 )
 material/1 = SubResource( 109 )
 
 [node name="PersonModel6" parent="." instance=ExtResource( 40 )]
-transform = Transform( -0.0570612, 0, -0.170716, 0, 0.18, 0, 0.170716, 0, -0.0570612, -0.289007, 0.25087, -0.601385 )
+transform = Transform( -0.0570612, 0, -0.170716, 0, 0.18, 0, 0.170716, 0, -0.0570612, -0.289007, 0.292283, -0.601385 )
 
 [node name="Cube004" parent="PersonModel6/char_search/Armature/Skeleton" index="0"]
 material/0 = SubResource( 110 )

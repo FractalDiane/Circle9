@@ -6,7 +6,7 @@ var close := false
 var quit := false
 
 
-func _on_AnimationPlayer_animation_finished(anim_name: String) -> void:
+func _on_AnimationPlayer_animation_finished(_anim_name: String) -> void:
 	if close:
 		emit_signal("menu_closed")
 		queue_free()
