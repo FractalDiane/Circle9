@@ -53,7 +53,7 @@ albedo_texture = ExtResource( 5 )
 extents = Vector3( 0.632238, 1, 0.580581 )
 
 [sub_resource type="SphereShape" id=10]
-radius = 1.2
+radius = 1.6
 
 [sub_resource type="ShaderMaterial" id=11]
 shader = ExtResource( 2 )
@@ -232,6 +232,7 @@ dialogue_subtitles = [ "Kill them.", "What, you don't want to do it yourself?", 
 dialogue_audio = [ ExtResource( 7 ), ExtResource( 9 ), ExtResource( 14 ), ExtResource( 8 ) ]
 
 [node name="CollisionShape" parent="Person/Area" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.186499, 0, 0.589023 )
 shape = SubResource( 10 )
 
 [node name="PersonModel" parent="." instance=ExtResource( 10 )]

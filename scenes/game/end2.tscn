@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://textures/red.png" type="Texture" id=1]
 [ext_resource path="res://prefabs/player.tscn" type="PackedScene" id=2]
@@ -48,16 +48,22 @@ shader_param/color = Color( 0, 0, 0, 1 )
 shader = ExtResource( 9 )
 shader_param/color = Color( 0.105882, 0.0862745, 0.270588, 1 )
 
-[sub_resource type="SpatialMaterial" id=8]
+[sub_resource type="SpatialMaterial" id=7]
 flags_unshaded = true
 albedo_texture = ExtResource( 7 )
 
-[sub_resource type="BoxShape" id=7]
+[sub_resource type="BoxShape" id=8]
 extents = Vector3( 0.632238, 1, 0.580581 )
 
 [sub_resource type="SpatialMaterial" id=9]
 flags_unshaded = true
 albedo_texture = ExtResource( 10 )
+
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 9, 1, 1 )
+
+[sub_resource type="BoxShape" id=11]
+extents = Vector3( 13, 1, 1 )
 
 [node name="End" type="Spatial"]
 
@@ -94,12 +100,11 @@ transform = Transform( -0.273808, 0, 0.961784, 0, 1, 0, -0.961784, 0, -0.273808,
 transform = Transform( 0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0 )
 
 [node name="Zul" parent="StaticBody/demon/root/Skeleton" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-material/0 = SubResource( 8 )
+material/0 = SubResource( 7 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.097232, 0.820572, 0 )
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="StaticBody3" type="StaticBody" parent="."]
 transform = Transform( 0.30202, 0, -0.953301, 0, 1, 0, 0.953301, 0, 0.30202, -1.56992, 0, -6.78875 )
@@ -112,12 +117,30 @@ material/0 = SubResource( 9 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.097232, 0.820572, 0 )
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="Door2" parent="." instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.449244, -18.0201 )
 target_scene = "res://scenes/game/end3.tscn"
 door_sound = ExtResource( 11 )
+
+[node name="Walls" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Walls"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -22 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Walls"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -9 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Walls"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 0, -9 )
+shape = SubResource( 11 )
 
 [editable path="Person"]
 [editable path="PersonModel3"]
